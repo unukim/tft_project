@@ -17,3 +17,6 @@ class load_data:
         }
         self.base_url = "https://kr.api.riotgames.com/tft/"
 
+    def challenger(self):
+        challenger_df = pd.DataFrame(challenger['entries'])
+
