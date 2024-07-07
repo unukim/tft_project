@@ -13,7 +13,6 @@ class RIOT:
         self.api_key = get_api_key("key.txt")
         self.base_url = "https://vn2.api.riotgames.com/tft/"
 
-
     
     def getLeague(self, queue = "RANKED_TFT"):
         """
