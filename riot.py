@@ -4,14 +4,14 @@ from helpers import get_api_key
 
 
 class RIOT:
-    def __init__(self, key):
+    def __init__(self):
         self.api_key = get_api_key("key.txt")
         self.base_url = "https://vn2.api.riotgames.com/tft/"
 
 
     
     def getLeague(self, queue):
-        url = self.base_url + "league/v1/challenger?queue=RANKED_TFT&api_key=" + self.api_key
+        url = self.base_url + f"league/v1/challenger?queue={queue}&api_key=" + self.api_key
         try:
             response = requests.get(url)
             
