@@ -2,7 +2,11 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
+<<<<<<< HEAD
     <orderEntry type="inheritedJdk" />
+=======
+    <orderEntry type="jdk" jdkName="Pipenv (tft_project)" jdkType="Python SDK" />
+>>>>>>> 22b9c7a7b7d6b1f30c7fc0129c1431df84be7449
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

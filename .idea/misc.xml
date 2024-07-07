@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Black">
+<<<<<<< HEAD
     <option name="sdkName" value="Python 3.12" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
+=======
+    <option name="sdkName" value="Python 3.10" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Pipenv (tft_project)" project-jdk-type="Python SDK" />
+>>>>>>> 22b9c7a7b7d6b1f30c7fc0129c1431df84be7449
 </project>
