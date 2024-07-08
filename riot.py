@@ -13,14 +13,7 @@ class RIOT:
         
         self.api_key = get_api_key("key.txt")
         self.base_url = "https://euw1.api.riotgames.com/tft/"
-
-        self.request_header = {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-            "Accept-Language": "en-US,en;q=0.9",
-            "Accept-Charset": "application/x-www-form-urlencoded; charset=UTF-8",
-            "Origin": "https://developer.riotgames.com",
-            "X-Riot-Token": self.api_key
-        }
+        self.riot_url = "https://europe.api.riotgames.com/riot/"
 
     
     def getLeague(self, queue = "RANKED_TFT"):
@@ -73,12 +66,39 @@ class RIOT:
         else:
             print(f"Failed to retrieve data: {response.status_code}")
 
-    def extract_game_by_summoner(self, id_name):
+    def get_gameID_bysummoner(self, game_name, tag_line, world, game_count):
 
-        id_url = self.base_url+f"summoner/v1/summoners/by-name/{id_name}"
-        my_id = requests.get(id_url, headers=self.request_header).json()
+        url = self.riot_url + f"account/v1/accounts/by-riot-id/{game_name}/{tag_line}?api_key=" + self.api_key
+        game_url = f"https://{world}.api.riotgames.com/tft/"
 
-        print(my_id)
+        try:
+            response = requests.get(url)
+        # Check if the request was successful
+            if response.status_code == 200:
+                puuid = response.json()['puuid']
+                game_ids = requests.get(f"{game_url}match/v1/matches/by-puuid/{puuid}/ids?count={game_count}&api_key={self.api_key}").json()
+                print(game_ids)
+                return game_ids
+            else:
+                print(f"Failed to retrieve data: {response.status_code}")
+                return None
+        except Exception as e:
+            print(f"Error executing API request: {e}")
+        
+    def get_gameResult(self,world,game_id):
+        base_url = f"https://{world}.api.riotgames.com/tft/"
+        game_result_code_name = f"match/v1/matches/{game_id}"
+        game_url = f"{base_url}{game_result_code_name}?api_key={self.api_key}"
 
+        try:
+            response = requests.get(game_url)
 
-       
+        # Check if the request was successful
+            if response.status_code == 200:
+                game_result = requests.get(game_url).json()
+                print(game_result)
+            else:
+                print(f"Failed to retrieve data: {response.status_code}")
+                return None
+        except Exception as e:
+            print(f"Error executing API request: {e}")
