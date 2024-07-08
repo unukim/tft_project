@@ -12,8 +12,10 @@ def item_data():
 		# Filter the DataFrame using the mask
 		items = items[mask]
 		items = items.drop(columns=['from','id', 'unique','icon', 'incompatibleTraits' ])
-		items.to_csv('items.csv', sep=',', index=False, encoding='utf-8')
+		items.to_csv('game_data/items.csv', sep=',', index=False, encoding='utf-8')
+	
 	return items
+
 
 def augment_data():
 	file_path = 'data_dragon.json'
@@ -27,23 +29,27 @@ def augment_data():
 		augments = augments[mask]
 		augments = augments.drop(columns=['from', 'id', 'unique', 'icon', 'incompatibleTraits'])
 
-		augments.to_csv('augments.csv',sep=',', index=False, encoding='utf-8')
+		augments.to_csv('game_data/augments.csv',sep=',', index=False, encoding='utf-8')
 
 	return augments
+
 
 def champion_data():
 	file_path = 'data_dragon.json'
 	with open(file_path, 'r') as json_file:
 		data_dragon = json.load(json_file)
+		
 		champions = pd.DataFrame(pd.DataFrame(data_dragon['sets']).loc['champions', '11'])
 		champions['ability'] = champions['ability'].apply(
 			lambda x: x['desc'] if isinstance(x, dict) and 'desc' in x else x)
 		champions = champions.drop(columns=['tileIcon', 'squareIcon', 'characterName', 'name'])
+		
 		desired_order = ['apiName', 'cost','traits','stats', 'ability' ]  # replace with actual column names
 		champions = champions[desired_order]
-		champions.to_csv('champions.csv',sep=',', index=False, encoding='utf-8')
+		champions.to_csv('game_data/champions.csv',sep=',', index=False, encoding='utf-8')
 
 	return champions
+
 
 def traits_data():
 	file_path = 'data_dragon.json'
@@ -51,7 +57,7 @@ def traits_data():
 		data_dragon = json.load(json_file)
 		traits = pd.DataFrame(pd.DataFrame(data_dragon['sets']).loc['traits', '11'])
 		traits = traits.drop(columns=['icon', 'name'])
-		traits.to_csv('traits.csv', sep=',', index=False, encoding='utf-8')
+		traits.to_csv('game_data/traits.csv', sep=',', index=False, encoding='utf-8')
 
 	return traits
 

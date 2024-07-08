@@ -22,7 +22,6 @@ class RIOT:
             "X-Riot-Token": self.api_key
         }
 
-
     
     def getLeague(self, queue = "RANKED_TFT"):
         """
