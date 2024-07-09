@@ -1,2 +1,4 @@
-key.txt
+/src/key.txt
 /game_data
+/__pycache__
+/src/__pycache__

@@ -1,6 +1,15 @@
 # TODO
 
+@Yunhu
+
 - Add more API retrieved function for the Riot Class, for example retrieve matches, top comps, tops augments, etc..
+- For instance, make an request to pull the most used champions to get top1, the most composition, most augments.
 - Organized the retrieved data, figure it out which one should we use, which one should not.
 - For now lets just uniform the server, we will only working on EUW1 server so every api request we made will be pulled from EUW server.
 
+@Phicks
+
+- Model build working model with testing agency
+- Research on model, which parameter is require
+
+- Research on how to input data from database into the model

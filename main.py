@@ -1,17 +1,17 @@
-from riot import RIOT
+from src.riotapi import RiotAPI
 
 
 if __name__ == "__main__":
     
-    riot = RIOT()
-    game_name = "sowieso"
-    tag_line = "1116"
-    game_count = 30
+    riot_api = RiotAPI()
+    game_name = "Upin and Ipin"
+    tag_line = "EUW"
+    game_count = 1
     region = "europe"
     game_ids = list()
-
-    #riot.getLeague("RANKED_TFT")
-    game_ids= riot.get_gameID_bysummoner(game_name, tag_line, region, game_count)
     
-    riot.get_gameResult(region, game_ids[0])
+    game_ids = riot_api.get_gameID_bysummoner(game_name, tag_line, region, game_count)
+    
+    game_result = riot_api.get_game_result(region, game_ids[0])
+
     
