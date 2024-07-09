@@ -4,6 +4,8 @@ To run and play with the test model. Open your terminal and run the "modelplaygr
 
 Remember to install all the library first.
 
+Run the file and it will show you the model training process, eventually you will see the model getting better and better.
+
 ## TODO
 
 @Yunhu
