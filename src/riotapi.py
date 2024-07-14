@@ -1,3 +1,4 @@
+import pandas as pd
 import requests
 
 from src.helpers import get_api_key, is_world_server_valid
@@ -89,6 +90,18 @@ class RiotAPI:
 
             game_url = f"https://{world}.api.riotgames.com/tft/match/v1/matches/{game_id}?api_key={self.api_key}"
             
+            
 
             return self.get(game_url)
 
+    def game_result_df(self, world: str, game_id: str) -> dict | None:
+        if not is_world_server_valid(world):
+            return None
+
+        game_url = f"https://{world}.api.riotgames.com/tft/match/v1/matches/{game_id}?api_key={self.api_key}"
+        game_result = requests.get(game_url).json()
+        game_df = pd.DataFrame(game_result)
+
+        return game_df
+        
+        

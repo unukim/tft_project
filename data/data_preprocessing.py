@@ -1,6 +1,11 @@
 import json
 import pandas as pd
 
+file_path = 'data_dragon.json'
+with open(file_path, "r") as json_file:
+	data_dragon = json.load(json_file)
+
+
 def item_data():
 	file_path = 'data_dragon.json'
 	with open(file_path, 'r') as json_file:
