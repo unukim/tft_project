@@ -8,12 +8,16 @@ Run the file and it will show you the model training process, eventually you wil
 
 ## TODO
 
+@All
+
+- Set up google cloud for training data, we need to find the space for training big data or where to collect and process alot of data
+- If not possible, try University Server?? I dont know if they allow us to use the facility.
+
 @Yunhu
 
-- Add more API retrieved function for the Riot Class, for example retrieve matches, top comps, tops augments, etc..
+- Add functions and algorithms to analsyst the data we collected for example retrieve matches, top comps, tops augments, etc..
+- Figure it out the way to constantly update the meta by calling and retrived data from all the users and comp play.
 - For instance, make an request to pull the most used champions to get top1, the most composition, most augments.
-- Organized the retrieved data, figure it out which one should we use, which one should not.
-- For now lets just uniform the server, we will only working on EUW1 server so every api request we made will be pulled from EUW server.
 
 @Phicks
 
