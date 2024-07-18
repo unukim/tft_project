@@ -19,11 +19,9 @@ class make_df:
         self.game_result = self.game_result[
             ['game_id', 'puuid', 'placement', 'level', 'gold_left', 'last_round', 'time_eliminated',
              'total_damage_to_players', 'augments', 'traits', 'units']]
-        self.champ_language = {self.champ.apiName[i]: self.champ.name[i] for i in range(self.champ.shape[0])}
+        self.champ_name = {self.champ.apiName[i] : self.champ.name[i] for i in range(self.champ.shape[0])}
         self.date = str(datetime.fromtimestamp(int(self.df['info']['game_datetime']) / 1000)).split(' ')[0]
-    
 
-        
 
 # Adding 3 new columns for each augments
     def add_augment_columns(self):
@@ -33,7 +31,8 @@ class make_df:
             change_result = []
 
             for augment in augments:
-                change_result.append(augment)
+                change_augment = self.item_data.loc[self.item_data.apiName == augment, 'name'].values[0]
+                change_result.append(change_augment)
 
             length_change_result = len(change_result)
 
@@ -70,16 +69,17 @@ class make_df:
         # Check if the unit dataframe is empty
         if units.shape[0] == 0:
             return pd.DataFrame(
-                columns=['character_id', 'rarity', 'tier', 'items', 'item1', 'item2', 'item3'])
+                columns=['character_id','champ_name','name','rarity', 'tier', 'items', 'item1', 'item2', 'item3'])
 
         item_list = []
+        champ_name = []
 
         # iterates over each character in the 'units' DataFrame
         for i in range(len(units['character_id'])):
+            champ_name.append(self.champ_name[units['character_id'][i]])
             check = units['itemNames'][i] #Extract Item Names
             check += [0] * (3 - len(check)) # creates a list of zeros in the list --> ensures it has 3 elements
             item_list.append(check)
-
         units['items'] = item_list
 
         item1 = []
@@ -98,11 +98,13 @@ class make_df:
             item2.append(check_item[1])
             item3.append(check_item[2])
 
-        units = pd.DataFrame(unit).drop(['itemNames', 'name'], axis=1)
+        units = pd.DataFrame(unit).drop(['itemNames'], axis=1)
 
         units['item1'] = item1
         units['item2'] = item2
         units['item3'] = item3
+        units.character_id = list(map(lambda x: x.replace(self.version, ''), units.character_id))
+        units['champ_name'] = champ_name
 
         return units
 
@@ -164,4 +166,38 @@ class make_df:
         New_result.to_csv('game_result.csv', sep=',', index=False, encoding='utf-8')
 
         return New_result
+
+    def make_trait_result(self, number):
+
+        trait1 = self.make_trait_dataframe(self.game_result.loc[number, 'traits'])
+        trait1['Datetime'] = self.date
+        trait1['Game_id'] = self.game_id
+        trait1['Player_id'] = self.game_result.loc[number, 'puuid']
+        trait1 = trait1[
+            ['Datetime', 'Game_id', 'Player_id', 'name', 'num_units', 'tier_current', 'tier_total']]
+        trait1.to_csv('trait_result.csv', sep=',', index=False, encoding='utf-8')
+        return trait1
+
+    def make_unit_result(self):
+
+        all_units = []
+
+        for number in range(len(self.game_result)):
+            unit = self.make_unit_dataframe(self.game_result.loc[number, 'units'])
+            unit['Datetime'] = self.date
+            unit['Game_id'] = self.game_id
+            unit['Player_id'] = self.game_result.loc[number, 'puuid']
+            unit = unit[
+                ['Datetime', 'Game_id', 'Player_id', 'character_id', 'rarity', 'tier', 'item1', 'item2',
+                 'item3']]
+            all_units.append(unit)
+
+        # Concatenate all DataFrames into one
+        all_units_df = pd.concat(all_units, ignore_index=True)
+
+        # Save to CSV
+        all_units_df.to_csv('unit_result.csv', sep=',', index=False, encoding='utf-8')
+
+        return all_units_df
+
     

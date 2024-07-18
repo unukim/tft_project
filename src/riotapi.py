@@ -1,6 +1,5 @@
 import pandas as pd
 import requests
-
 from src.helpers import get_api_key, is_world_server_valid
 
 
@@ -13,6 +12,7 @@ class RiotAPI:
         """
         
         self.api_key = get_api_key("key.txt")
+        self.world = "europe"
 
 
     def get(self, url: str) -> dict|None:
@@ -36,6 +36,32 @@ class RiotAPI:
         except Exception as e:
             print(f"Error executing API request: {e}")
             return None
+
+    def get_challenger(self):
+        url = f"https://euw1.api.riotgames.com/tft/league/v1/challenger?queue=RANKED_TFT&api_key={self.api_key}"
+        return self.get(url)
+
+    def challengers_PUUID(self):
+        challengers_puuid = []
+        challengers = self.get_challenger()
+        summoners_ids = [entry['summonerId'] for entry in challengers['entries'][:10]]
+
+        for summoner_id in summoners_ids:
+            url = f"https://euw1.api.riotgames.com/tft/league/v1/entries/by-summoner/{summoner_id}?api_key={self.api_key}"
+            try:
+                summoner_info = self.get(url)
+                if isinstance(summoner_info, list):
+                    for entry in summoner_info:
+                        if 'puuid' in entry:
+                            challengers_puuid.append(entry['puuid'])
+
+            except requests.exceptions.RequestException as e:
+                print(f"Error fetching puuid for summoner ID {summoner_id}: {e}")
+
+
+        return challengers_puuid
+
+
 
 
     def get_gameID_bysummoner(self, game_name: str, tag_line: str, world: str, game_count: int) -> list:
@@ -71,6 +97,23 @@ class RiotAPI:
         else:
             return None
 
+    def get_match_by_puuid(self):
+        all_match_ids = []
+        summoner_ids = self.challengers_PUUID()
+        for summoner_id in summoner_ids:
+            url = f"https://{self.world}.api.riotgames.com/tft/match/v1/matches/by-puuid/{summoner_id}/ids?start=0&count=1&api_key={self.api_key}"
+            try:
+                match_id = self.get(url)
+                all_match_ids.extend(match_id)  # Add match IDs to the list
+
+            except requests.exceptions.RequestException as e:
+                print(f"Error fetching match IDs for summoner ID {summoner_id}: {e}")
+
+
+
+        return all_match_ids
+
+
  
     def get_game_result(self, world: str, game_id: str) -> dict|None:
             """
@@ -94,14 +137,13 @@ class RiotAPI:
 
             return self.get(game_url)
 
-    def game_result_df(self, world: str, game_id: str) -> dict | None:
-        if not is_world_server_valid(world):
-            return None
-
-        game_url = f"https://{world}.api.riotgames.com/tft/match/v1/matches/{game_id}?api_key={self.api_key}"
+    def game_result_df(self, game_id: str) -> dict | None:
+        game_url = f"https://{self.world}.api.riotgames.com/tft/match/v1/matches/{game_id}?api_key={self.api_key}"
         game_result = requests.get(game_url).json()
         game_df = pd.DataFrame(game_result)
+        #game_df.to_csv('game.csv', sep=',', index=False, encoding='utf-8')
 
         return game_df
+
         
         
