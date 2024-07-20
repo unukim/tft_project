@@ -37,14 +37,17 @@ class RiotAPI:
             print(f"Error executing API request: {e}")
             return None
 
+
     def get_challenger(self):
+        #Get the user information of every challenger players
         url = f"https://euw1.api.riotgames.com/tft/league/v1/challenger?queue=RANKED_TFT&api_key={self.api_key}"
         return self.get(url)
 
     def challengers_PUUID(self):
+        # storing the puuid of each challenger players from get_challenger() function request
         challengers_puuid = []
         challengers = self.get_challenger()
-        summoners_ids = [entry['summonerId'] for entry in challengers['entries'][:10]]
+        summoners_ids = [entry['summonerId'] for entry in challengers['entries'][:5]]
 
         for summoner_id in summoners_ids:
             url = f"https://euw1.api.riotgames.com/tft/league/v1/entries/by-summoner/{summoner_id}?api_key={self.api_key}"
@@ -97,11 +100,12 @@ class RiotAPI:
         else:
             return None
 
-    def get_match_by_puuid(self):
+    def get_match_by_puuid(self, game_count):
+        #Storing every match ID of each players
         all_match_ids = []
         summoner_ids = self.challengers_PUUID()
         for summoner_id in summoner_ids:
-            url = f"https://{self.world}.api.riotgames.com/tft/match/v1/matches/by-puuid/{summoner_id}/ids?start=0&count=1&api_key={self.api_key}"
+            url = f"https://{self.world}.api.riotgames.com/tft/match/v1/matches/by-puuid/{summoner_id}/ids?start=0&count={game_count}&api_key={self.api_key}"
             try:
                 match_id = self.get(url)
                 all_match_ids.extend(match_id)  # Add match IDs to the list
@@ -137,8 +141,9 @@ class RiotAPI:
 
             return self.get(game_url)
 
-    def game_result_df(self, game_id: str) -> dict | None:
-        game_url = f"https://{self.world}.api.riotgames.com/tft/match/v1/matches/{game_id}?api_key={self.api_key}"
+    def game_result_df(self, match_id: str) -> dict | None:
+        # Get the dataframe of game results corresponding to each match ID
+        game_url = f"https://{self.world}.api.riotgames.com/tft/match/v1/matches/{match_id}?api_key={self.api_key}"
         game_result = requests.get(game_url).json()
         game_df = pd.DataFrame(game_result)
         #game_df.to_csv('game.csv', sep=',', index=False, encoding='utf-8')

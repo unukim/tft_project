@@ -15,6 +15,8 @@ class make_list_df:
 
     def is_empty_dict(self,x):
         return isinstance(x, dict) and not x
+
+    #Create empty dataframe that stores the basic champion statistics
     def make_champ_list(self):
         champions_mask = self.champions['apiName'].str.startswith('TFT11')
         self.champions = self.champions[champions_mask]
@@ -36,6 +38,7 @@ class make_list_df:
 
         return champs_df
 
+    # Create empty dataframe that stores the basic item statistics
     def make_item_list(self):
         allowed_prefixes = ['TFT11_Item', 'TFT_Item']
         item_mask = self.items['apiName'].str.startswith(tuple(allowed_prefixes))
@@ -62,6 +65,7 @@ class make_list_df:
 
         return items_df
 
+    # Create empty dataframe that stores the basic augment statistics
     def make_augment_list(self):
         augment_mask = self.augments['apiName'].str.contains('Augment')
         self.augments = self.augments[augment_mask]

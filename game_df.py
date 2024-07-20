@@ -163,7 +163,7 @@ class make_df:
             New_result['item_name'].append(np.array(unit_dataframe.loc[:, ['item1', 'item2', 'item3']]).tolist())
 
         New_result = pd.DataFrame(New_result)
-        New_result.to_csv('game_result.csv', sep=',', index=False, encoding='utf-8')
+        #New_result.to_csv('game_result.csv', sep=',', index=False, encoding='utf-8')
 
         return New_result
 
@@ -175,7 +175,7 @@ class make_df:
         trait1['Player_id'] = self.game_result.loc[number, 'puuid']
         trait1 = trait1[
             ['Datetime', 'Game_id', 'Player_id', 'name', 'num_units', 'tier_current', 'tier_total']]
-        trait1.to_csv('trait_result.csv', sep=',', index=False, encoding='utf-8')
+        #trait1.to_csv('trait_result.csv', sep=',', index=False, encoding='utf-8')
         return trait1
 
     def make_unit_result(self):
@@ -196,8 +196,8 @@ class make_df:
         all_units_df = pd.concat(all_units, ignore_index=True)
 
         # Save to CSV
-        all_units_df.to_csv('unit_result.csv', sep=',', index=False, encoding='utf-8')
+        #all_units_df.to_csv('unit_result.csv', sep=',', index=False, encoding='utf-8')
 
         return all_units_df
 
-    
+
