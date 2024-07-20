@@ -1,0 +1,73 @@
+Datetime,Game_id,Player_id,Placement,augment1,augment2,augment3,character_id,rarity,tier,item1,item2,item3,num_item
+2024-07-11,EUW1_6999234638,J7kNjzj20LQbh2s3T1jG6yl3zf7PAt6UQ95brACtW9SiGuksxFXWhaZ1zR-ggkXGmxHFovfY0sodng,7,Wrath of the Moon,Slammin'+,Accomplice,TFT11_Darius,0,2,None,None,None,0
+2024-07-11,EUW1_6999234638,J7kNjzj20LQbh2s3T1jG6yl3zf7PAt6UQ95brACtW9SiGuksxFXWhaZ1zR-ggkXGmxHFovfY0sodng,7,Wrath of the Moon,Slammin'+,Accomplice,TFT11_Yorick,1,2,Protector's Vow,None,None,1
+2024-07-11,EUW1_6999234638,J7kNjzj20LQbh2s3T1jG6yl3zf7PAt6UQ95brACtW9SiGuksxFXWhaZ1zR-ggkXGmxHFovfY0sodng,7,Wrath of the Moon,Slammin'+,Accomplice,TFT11_Janna,1,2,None,None,None,0
+2024-07-11,EUW1_6999234638,J7kNjzj20LQbh2s3T1jG6yl3zf7PAt6UQ95brACtW9SiGuksxFXWhaZ1zR-ggkXGmxHFovfY0sodng,7,Wrath of the Moon,Slammin'+,Accomplice,TFT11_Shen,1,2,None,None,None,0
+2024-07-11,EUW1_6999234638,J7kNjzj20LQbh2s3T1jG6yl3zf7PAt6UQ95brACtW9SiGuksxFXWhaZ1zR-ggkXGmxHFovfY0sodng,7,Wrath of the Moon,Slammin'+,Accomplice,TFT11_Alune,2,2,Nashor's Tooth,Spear of Shojin,Guardbreaker,3
+2024-07-11,EUW1_6999234638,J7kNjzj20LQbh2s3T1jG6yl3zf7PAt6UQ95brACtW9SiGuksxFXWhaZ1zR-ggkXGmxHFovfY0sodng,7,Wrath of the Moon,Slammin'+,Accomplice,TFT11_Sylas,4,1,Crownguard,Adaptive Helm,Steadfast Heart,3
+2024-07-11,EUW1_6999234638,J7kNjzj20LQbh2s3T1jG6yl3zf7PAt6UQ95brACtW9SiGuksxFXWhaZ1zR-ggkXGmxHFovfY0sodng,7,Wrath of the Moon,Slammin'+,Accomplice,TFT11_LeeSin,4,2,Bloodthirster,None,None,1
+2024-07-11,EUW1_6999234638,J7kNjzj20LQbh2s3T1jG6yl3zf7PAt6UQ95brACtW9SiGuksxFXWhaZ1zR-ggkXGmxHFovfY0sodng,7,Wrath of the Moon,Slammin'+,Accomplice,TFT11_Galio,4,1,Accomplice's Gloves,Zeke's Herald,Shroud of Stillness,3
+2024-07-11,EUW1_6999234638,c7MCIJU9KSuJa01EuzhA9fZ52UxWaOPw9SBF5z_uE-E9ZMj25ePlDWQ3dIYIT7iszpfqmX_PpZlz8w,8,Inkshadow Crest,Little Buddies,Call to Chaos,TFT11_Jax,0,2,None,None,None,0
+2024-07-11,EUW1_6999234638,c7MCIJU9KSuJa01EuzhA9fZ52UxWaOPw9SBF5z_uE-E9ZMj25ePlDWQ3dIYIT7iszpfqmX_PpZlz8w,8,Inkshadow Crest,Little Buddies,Call to Chaos,TFT11_Shen,1,1,None,None,None,0
+2024-07-11,EUW1_6999234638,c7MCIJU9KSuJa01EuzhA9fZ52UxWaOPw9SBF5z_uE-E9ZMj25ePlDWQ3dIYIT7iszpfqmX_PpZlz8w,8,Inkshadow Crest,Little Buddies,Call to Chaos,TFT11_Aatrox,1,2,Crownguard,None,None,1
+2024-07-11,EUW1_6999234638,c7MCIJU9KSuJa01EuzhA9fZ52UxWaOPw9SBF5z_uE-E9ZMj25ePlDWQ3dIYIT7iszpfqmX_PpZlz8w,8,Inkshadow Crest,Little Buddies,Call to Chaos,TFT11_Volibear,2,2,Protector's Vow,None,None,1
+2024-07-11,EUW1_6999234638,c7MCIJU9KSuJa01EuzhA9fZ52UxWaOPw9SBF5z_uE-E9ZMj25ePlDWQ3dIYIT7iszpfqmX_PpZlz8w,8,Inkshadow Crest,Little Buddies,Call to Chaos,TFT11_Sylas,4,1,Tattoo of Force,None,None,1
+2024-07-11,EUW1_6999234638,c7MCIJU9KSuJa01EuzhA9fZ52UxWaOPw9SBF5z_uE-E9ZMj25ePlDWQ3dIYIT7iszpfqmX_PpZlz8w,8,Inkshadow Crest,Little Buddies,Call to Chaos,TFT11_Ornn,4,2,Inkshadow Emblem,Protector's Vow,Dragon's Claw,3
+2024-07-11,EUW1_6999234638,c7MCIJU9KSuJa01EuzhA9fZ52UxWaOPw9SBF5z_uE-E9ZMj25ePlDWQ3dIYIT7iszpfqmX_PpZlz8w,8,Inkshadow Crest,Little Buddies,Call to Chaos,TFT11_Kaisa,4,1,Last Whisper,Morellonomicon,Giant Slayer,3
+2024-07-11,EUW1_6999234638,c7MCIJU9KSuJa01EuzhA9fZ52UxWaOPw9SBF5z_uE-E9ZMj25ePlDWQ3dIYIT7iszpfqmX_PpZlz8w,8,Inkshadow Crest,Little Buddies,Call to Chaos,TFT11_Irelia,6,2,Tattoo of Fury,Guinsoo's Rageblade,Infinity Edge,3
+2024-07-11,EUW1_6999234638,1hcl_TmKltLDmalJq_CdutgtmGUR0BJY1STXqymugatkZOvGaFv0xXqx56ojIHjMZugCYLrhfgTqHg,2,Enter the Dragon,Sage Crest,Radiant Refactor,TFT11_Zyra,1,2,None,None,None,0
+2024-07-11,EUW1_6999234638,1hcl_TmKltLDmalJq_CdutgtmGUR0BJY1STXqymugatkZOvGaFv0xXqx56ojIHjMZugCYLrhfgTqHg,2,Enter the Dragon,Sage Crest,Radiant Refactor,TFT11_Janna,1,3,Jeweled Gauntlet,The Baron's Gift,Spear of Shojin,3
+2024-07-11,EUW1_6999234638,1hcl_TmKltLDmalJq_CdutgtmGUR0BJY1STXqymugatkZOvGaFv0xXqx56ojIHjMZugCYLrhfgTqHg,2,Enter the Dragon,Sage Crest,Radiant Refactor,TFT11_Lux,1,3,Adaptive Helm,Red Buff,Hextech Gunblade,3
+2024-07-11,EUW1_6999234638,1hcl_TmKltLDmalJq_CdutgtmGUR0BJY1STXqymugatkZOvGaFv0xXqx56ojIHjMZugCYLrhfgTqHg,2,Enter the Dragon,Sage Crest,Radiant Refactor,TFT11_Diana,2,2,None,None,None,0
+2024-07-11,EUW1_6999234638,1hcl_TmKltLDmalJq_CdutgtmGUR0BJY1STXqymugatkZOvGaFv0xXqx56ojIHjMZugCYLrhfgTqHg,2,Enter the Dragon,Sage Crest,Radiant Refactor,TFT11_Illaoi,2,2,Sage Emblem,None,None,1
+2024-07-11,EUW1_6999234638,1hcl_TmKltLDmalJq_CdutgtmGUR0BJY1STXqymugatkZOvGaFv0xXqx56ojIHjMZugCYLrhfgTqHg,2,Enter the Dragon,Sage Crest,Radiant Refactor,TFT11_Amumu,2,3,Steadfast Heart,Gargoyle Stoneplate,Ionic Spark,3
+2024-07-11,EUW1_6999234638,1hcl_TmKltLDmalJq_CdutgtmGUR0BJY1STXqymugatkZOvGaFv0xXqx56ojIHjMZugCYLrhfgTqHg,2,Enter the Dragon,Sage Crest,Radiant Refactor,TFT11_Morgana,4,2,Red Buff,None,None,1
+2024-07-11,EUW1_6999234638,1hcl_TmKltLDmalJq_CdutgtmGUR0BJY1STXqymugatkZOvGaFv0xXqx56ojIHjMZugCYLrhfgTqHg,2,Enter the Dragon,Sage Crest,Radiant Refactor,TFT11_Annie,4,2,Adaptive Helm,Dragon's Claw,Innervating Locket,3
+2024-07-11,EUW1_6999234638,1hcl_TmKltLDmalJq_CdutgtmGUR0BJY1STXqymugatkZOvGaFv0xXqx56ojIHjMZugCYLrhfgTqHg,2,Enter the Dragon,Sage Crest,Radiant Refactor,TFT11_Rakan,6,1,None,None,None,0
+2024-07-11,EUW1_6999234638,SkMNfk4uDlI1-IFutk6T_0SCKQDInXGXlnaiuII_xN7TdB1JwKNYQJRcN76LGFDQgIrfltqvd7mEOQ,4,Lucky Ricochet,Salvage Bin+,Jeweled Lotus III,TFT11_Sivir,0,2,None,None,None,0
+2024-07-11,EUW1_6999234638,SkMNfk4uDlI1-IFutk6T_0SCKQDInXGXlnaiuII_xN7TdB1JwKNYQJRcN76LGFDQgIrfltqvd7mEOQ,4,Lucky Ricochet,Salvage Bin+,Jeweled Lotus III,TFT11_Yorick,1,1,None,None,None,0
+2024-07-11,EUW1_6999234638,SkMNfk4uDlI1-IFutk6T_0SCKQDInXGXlnaiuII_xN7TdB1JwKNYQJRcN76LGFDQgIrfltqvd7mEOQ,4,Lucky Ricochet,Salvage Bin+,Jeweled Lotus III,TFT11_Riven,1,2,None,None,None,0
+2024-07-11,EUW1_6999234638,SkMNfk4uDlI1-IFutk6T_0SCKQDInXGXlnaiuII_xN7TdB1JwKNYQJRcN76LGFDQgIrfltqvd7mEOQ,4,Lucky Ricochet,Salvage Bin+,Jeweled Lotus III,TFT11_Aatrox,1,2,None,None,None,0
+2024-07-11,EUW1_6999234638,SkMNfk4uDlI1-IFutk6T_0SCKQDInXGXlnaiuII_xN7TdB1JwKNYQJRcN76LGFDQgIrfltqvd7mEOQ,4,Lucky Ricochet,Salvage Bin+,Jeweled Lotus III,TFT11_Sylas,4,2,Bloodthirster,Jeweled Gauntlet,Ionic Spark,3
+2024-07-11,EUW1_6999234638,SkMNfk4uDlI1-IFutk6T_0SCKQDInXGXlnaiuII_xN7TdB1JwKNYQJRcN76LGFDQgIrfltqvd7mEOQ,4,Lucky Ricochet,Salvage Bin+,Jeweled Lotus III,TFT11_Kaisa,4,1,Spear of Shojin,Infinity Edge,Last Whisper,3
+2024-07-11,EUW1_6999234638,SkMNfk4uDlI1-IFutk6T_0SCKQDInXGXlnaiuII_xN7TdB1JwKNYQJRcN76LGFDQgIrfltqvd7mEOQ,4,Lucky Ricochet,Salvage Bin+,Jeweled Lotus III,TFT11_Galio,4,2,Redemption,Steadfast Heart,Redemption,3
+2024-07-11,EUW1_6999234638,SkMNfk4uDlI1-IFutk6T_0SCKQDInXGXlnaiuII_xN7TdB1JwKNYQJRcN76LGFDQgIrfltqvd7mEOQ,4,Lucky Ricochet,Salvage Bin+,Jeweled Lotus III,TFT11_Xayah,6,1,Red Buff,Gambler's Blade,None,2
+2024-07-11,EUW1_6999234638,SkMNfk4uDlI1-IFutk6T_0SCKQDInXGXlnaiuII_xN7TdB1JwKNYQJRcN76LGFDQgIrfltqvd7mEOQ,4,Lucky Ricochet,Salvage Bin+,Jeweled Lotus III,TFT11_Kayle,9,1,Talisman of Speed,None,None,1
+2024-07-11,EUW1_6999234638,SlsjQGGtfjLkvuFbliBeJLMPgRlrFBWkizuPQz1EchoU-2JOcNGGep-qp54TZS2HU4fYeGCGT4Nq5A,1,Jeweled Lotus II,Raining Gold+,Bruiser Crown,TFT11_Sivir,0,2,None,None,None,0
+2024-07-11,EUW1_6999234638,SlsjQGGtfjLkvuFbliBeJLMPgRlrFBWkizuPQz1EchoU-2JOcNGGep-qp54TZS2HU4fYeGCGT4Nq5A,1,Jeweled Lotus II,Raining Gold+,Bruiser Crown,TFT11_Shen,1,1,None,None,None,0
+2024-07-11,EUW1_6999234638,SlsjQGGtfjLkvuFbliBeJLMPgRlrFBWkizuPQz1EchoU-2JOcNGGep-qp54TZS2HU4fYeGCGT4Nq5A,1,Jeweled Lotus II,Raining Gold+,Bruiser Crown,TFT11_Teemo,1,2,None,None,None,0
+2024-07-11,EUW1_6999234638,SlsjQGGtfjLkvuFbliBeJLMPgRlrFBWkizuPQz1EchoU-2JOcNGGep-qp54TZS2HU4fYeGCGT4Nq5A,1,Jeweled Lotus II,Raining Gold+,Bruiser Crown,TFT11_Aatrox,1,1,Heavenly Emblem,None,None,1
+2024-07-11,EUW1_6999234638,SlsjQGGtfjLkvuFbliBeJLMPgRlrFBWkizuPQz1EchoU-2JOcNGGep-qp54TZS2HU4fYeGCGT4Nq5A,1,Jeweled Lotus II,Raining Gold+,Bruiser Crown,TFT11_Sylas,4,2,Rabadon's Deathcap,Bloodthirster,Suspicious Trench Coat,3
+2024-07-11,EUW1_6999234638,SlsjQGGtfjLkvuFbliBeJLMPgRlrFBWkizuPQz1EchoU-2JOcNGGep-qp54TZS2HU4fYeGCGT4Nq5A,1,Jeweled Lotus II,Raining Gold+,Bruiser Crown,TFT11_Kaisa,4,2,Infinity Edge,Hand Of Justice,Last Whisper,3
+2024-07-11,EUW1_6999234638,SlsjQGGtfjLkvuFbliBeJLMPgRlrFBWkizuPQz1EchoU-2JOcNGGep-qp54TZS2HU4fYeGCGT4Nq5A,1,Jeweled Lotus II,Raining Gold+,Bruiser Crown,TFT11_Galio,4,2,Gargoyle Stoneplate,Redemption,Warmog's Armor,3
+2024-07-11,EUW1_6999234638,SlsjQGGtfjLkvuFbliBeJLMPgRlrFBWkizuPQz1EchoU-2JOcNGGep-qp54TZS2HU4fYeGCGT4Nq5A,1,Jeweled Lotus II,Raining Gold+,Bruiser Crown,TFT11_Udyr,6,2,Bruiser Emblem,Tear of the Goddess,Protector's Vow,3
+2024-07-11,EUW1_6999234638,SlsjQGGtfjLkvuFbliBeJLMPgRlrFBWkizuPQz1EchoU-2JOcNGGep-qp54TZS2HU4fYeGCGT4Nq5A,1,Jeweled Lotus II,Raining Gold+,Bruiser Crown,TFT11_Xayah,6,2,Giant Slayer,Tattoo of Toxin,Bloodthirster,3
+2024-07-11,EUW1_6999234638,SlsjQGGtfjLkvuFbliBeJLMPgRlrFBWkizuPQz1EchoU-2JOcNGGep-qp54TZS2HU4fYeGCGT4Nq5A,1,Jeweled Lotus II,Raining Gold+,Bruiser Crown,TFT11_Irelia,6,2,None,None,None,0
+2024-07-11,EUW1_6999234638,SlsjQGGtfjLkvuFbliBeJLMPgRlrFBWkizuPQz1EchoU-2JOcNGGep-qp54TZS2HU4fYeGCGT4Nq5A,1,Jeweled Lotus II,Raining Gold+,Bruiser Crown,TFT11_Kayle,9,1,Talisman of Speed,None,None,1
+2024-07-11,EUW1_6999234638,wawqzZGWTv6k8bHRfCBd_Tfhe-h3R1BBm5toZ6tY_g-yxrj44yVdRXZLPUwX83a8WNvZOu4p0tZsBg,3,Buried Treasures II,Best Friends II,Prismatic Ticket,TFT11_Caitlyn,0,3,Infinity Force,Runaan's Hurricane,None,2
+2024-07-11,EUW1_6999234638,wawqzZGWTv6k8bHRfCBd_Tfhe-h3R1BBm5toZ6tY_g-yxrj44yVdRXZLPUwX83a8WNvZOu4p0tZsBg,3,Buried Treasures II,Best Friends II,Prismatic Ticket,TFT11_Senna,1,3,Last Whisper,Infinity Edge,Giant Slayer,3
+2024-07-11,EUW1_6999234638,wawqzZGWTv6k8bHRfCBd_Tfhe-h3R1BBm5toZ6tY_g-yxrj44yVdRXZLPUwX83a8WNvZOu4p0tZsBg,3,Buried Treasures II,Best Friends II,Prismatic Ticket,TFT11_Shen,1,3,Adaptive Helm,Ionic Spark,Gargoyle Stoneplate,3
+2024-07-11,EUW1_6999234638,wawqzZGWTv6k8bHRfCBd_Tfhe-h3R1BBm5toZ6tY_g-yxrj44yVdRXZLPUwX83a8WNvZOu4p0tZsBg,3,Buried Treasures II,Best Friends II,Prismatic Ticket,TFT11_Aatrox,1,3,Tattoo of Protection,Sunfire Cape,Redemption,3
+2024-07-11,EUW1_6999234638,wawqzZGWTv6k8bHRfCBd_Tfhe-h3R1BBm5toZ6tY_g-yxrj44yVdRXZLPUwX83a8WNvZOu4p0tZsBg,3,Buried Treasures II,Best Friends II,Prismatic Ticket,TFT11_Illaoi,2,3,Thief's Gloves,Bramble Vest,Titan's Resolve,3
+2024-07-11,EUW1_6999234638,wawqzZGWTv6k8bHRfCBd_Tfhe-h3R1BBm5toZ6tY_g-yxrj44yVdRXZLPUwX83a8WNvZOu4p0tZsBg,3,Buried Treasures II,Best Friends II,Prismatic Ticket,TFT11_Morgana,4,2,Rabadon's Deathcap,Giant Slayer,None,2
+2024-07-11,EUW1_6999234638,wawqzZGWTv6k8bHRfCBd_Tfhe-h3R1BBm5toZ6tY_g-yxrj44yVdRXZLPUwX83a8WNvZOu4p0tZsBg,3,Buried Treasures II,Best Friends II,Prismatic Ticket,TFT11_Kayn,4,2,None,None,None,0
+2024-07-11,EUW1_6999234638,wawqzZGWTv6k8bHRfCBd_Tfhe-h3R1BBm5toZ6tY_g-yxrj44yVdRXZLPUwX83a8WNvZOu4p0tZsBg,3,Buried Treasures II,Best Friends II,Prismatic Ticket,TFT11_Udyr,6,1,None,None,None,0
+2024-07-11,EUW1_6999234638,3j8ktBx1XmpbL6chqimEAHZ_fAFjUXW5dbQAm5JPZeFaZpJqb7nz8fDM_fsxlG2Z2w3Y-98RTy0lQw,6,Learning to Spell,Two Healthy,Cybernetic Bulk III,TFT11_Gnar,1,2,B.F. Sword,None,None,1
+2024-07-11,EUW1_6999234638,3j8ktBx1XmpbL6chqimEAHZ_fAFjUXW5dbQAm5JPZeFaZpJqb7nz8fDM_fsxlG2Z2w3Y-98RTy0lQw,6,Learning to Spell,Two Healthy,Cybernetic Bulk III,TFT11_Zyra,1,2,Rabadon's Deathcap,None,None,1
+2024-07-11,EUW1_6999234638,3j8ktBx1XmpbL6chqimEAHZ_fAFjUXW5dbQAm5JPZeFaZpJqb7nz8fDM_fsxlG2Z2w3Y-98RTy0lQw,6,Learning to Spell,Two Healthy,Cybernetic Bulk III,TFT11_Riven,1,2,Giant's Belt,None,None,1
+2024-07-11,EUW1_6999234638,3j8ktBx1XmpbL6chqimEAHZ_fAFjUXW5dbQAm5JPZeFaZpJqb7nz8fDM_fsxlG2Z2w3Y-98RTy0lQw,6,Learning to Spell,Two Healthy,Cybernetic Bulk III,TFT11_Shen,1,2,Chain Vest,None,None,1
+2024-07-11,EUW1_6999234638,3j8ktBx1XmpbL6chqimEAHZ_fAFjUXW5dbQAm5JPZeFaZpJqb7nz8fDM_fsxlG2Z2w3Y-98RTy0lQw,6,Learning to Spell,Two Healthy,Cybernetic Bulk III,TFT11_Aatrox,1,2,None,None,None,0
+2024-07-11,EUW1_6999234638,3j8ktBx1XmpbL6chqimEAHZ_fAFjUXW5dbQAm5JPZeFaZpJqb7nz8fDM_fsxlG2Z2w3Y-98RTy0lQw,6,Learning to Spell,Two Healthy,Cybernetic Bulk III,TFT11_Illaoi,2,2,Bramble Vest,Steadfast Heart,None,2
+2024-07-11,EUW1_6999234638,3j8ktBx1XmpbL6chqimEAHZ_fAFjUXW5dbQAm5JPZeFaZpJqb7nz8fDM_fsxlG2Z2w3Y-98RTy0lQw,6,Learning to Spell,Two Healthy,Cybernetic Bulk III,TFT11_Zoe,2,2,Jeweled Gauntlet,Nashor's Tooth,Statikk Shiv,3
+2024-07-11,EUW1_6999234638,3j8ktBx1XmpbL6chqimEAHZ_fAFjUXW5dbQAm5JPZeFaZpJqb7nz8fDM_fsxlG2Z2w3Y-98RTy0lQw,6,Learning to Spell,Two Healthy,Cybernetic Bulk III,TFT11_Morgana,4,2,None,None,None,0
+2024-07-11,EUW1_6999234638,3j8ktBx1XmpbL6chqimEAHZ_fAFjUXW5dbQAm5JPZeFaZpJqb7nz8fDM_fsxlG2Z2w3Y-98RTy0lQw,6,Learning to Spell,Two Healthy,Cybernetic Bulk III,TFT11_Kayle,9,1,Talisman of Might,None,None,1
+2024-07-11,EUW1_6999234638,o1_f6eX7yrYG8phlw75EkGocKY7QWDkWay-cMq9d6RMo4gaxhpd1THXhW-4EJTdwlsiVb7VW8KDrJA,5,Inkshadow Crest,Big Grab Bag,New Recruit,TFT11_Sivir,0,1,None,None,None,0
+2024-07-11,EUW1_6999234638,o1_f6eX7yrYG8phlw75EkGocKY7QWDkWay-cMq9d6RMo4gaxhpd1THXhW-4EJTdwlsiVb7VW8KDrJA,5,Inkshadow Crest,Big Grab Bag,New Recruit,TFT11_Senna,1,2,None,None,None,0
+2024-07-11,EUW1_6999234638,o1_f6eX7yrYG8phlw75EkGocKY7QWDkWay-cMq9d6RMo4gaxhpd1THXhW-4EJTdwlsiVb7VW8KDrJA,5,Inkshadow Crest,Big Grab Bag,New Recruit,TFT11_Qiyana,1,1,Bloodthirster,None,None,1
+2024-07-11,EUW1_6999234638,o1_f6eX7yrYG8phlw75EkGocKY7QWDkWay-cMq9d6RMo4gaxhpd1THXhW-4EJTdwlsiVb7VW8KDrJA,5,Inkshadow Crest,Big Grab Bag,New Recruit,TFT11_Aatrox,1,2,None,None,None,0
+2024-07-11,EUW1_6999234638,o1_f6eX7yrYG8phlw75EkGocKY7QWDkWay-cMq9d6RMo4gaxhpd1THXhW-4EJTdwlsiVb7VW8KDrJA,5,Inkshadow Crest,Big Grab Bag,New Recruit,TFT11_Volibear,2,2,Crownguard,Protector's Vow,Ionic Spark,3
+2024-07-11,EUW1_6999234638,o1_f6eX7yrYG8phlw75EkGocKY7QWDkWay-cMq9d6RMo4gaxhpd1THXhW-4EJTdwlsiVb7VW8KDrJA,5,Inkshadow Crest,Big Grab Bag,New Recruit,TFT11_LeeSin,4,2,Inkshadow Emblem,Tattoo of Force,Hand Of Justice,3
+2024-07-11,EUW1_6999234638,o1_f6eX7yrYG8phlw75EkGocKY7QWDkWay-cMq9d6RMo4gaxhpd1THXhW-4EJTdwlsiVb7VW8KDrJA,5,Inkshadow Crest,Big Grab Bag,New Recruit,TFT11_Kaisa,4,1,Giant Slayer,None,None,1
+2024-07-11,EUW1_6999234638,o1_f6eX7yrYG8phlw75EkGocKY7QWDkWay-cMq9d6RMo4gaxhpd1THXhW-4EJTdwlsiVb7VW8KDrJA,5,Inkshadow Crest,Big Grab Bag,New Recruit,TFT11_Galio,4,1,Gargoyle Stoneplate,Evenshroud,Talisman Of Ascension,3
+2024-07-11,EUW1_6999234638,o1_f6eX7yrYG8phlw75EkGocKY7QWDkWay-cMq9d6RMo4gaxhpd1THXhW-4EJTdwlsiVb7VW8KDrJA,5,Inkshadow Crest,Big Grab Bag,New Recruit,TFT11_Irelia,6,2,Infinity Edge,Tattoo of Toxin,Deathblade,3
+2024-07-11,EUW1_6999234638,o1_f6eX7yrYG8phlw75EkGocKY7QWDkWay-cMq9d6RMo4gaxhpd1THXhW-4EJTdwlsiVb7VW8KDrJA,5,Inkshadow Crest,Big Grab Bag,New Recruit,TFT11_Kayle,9,1,Talisman of Speed,None,None,1
