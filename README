@@ -10,10 +10,9 @@ Run the file and it will show you the model training process, eventually you wil
 
 @Yunhu
 
-- Add more API retrieved function for the Riot Class, for example retrieve matches, top comps, tops augments, etc..
-- For instance, make an request to pull the most used champions to get top1, the most composition, most augments.
-- Organized the retrieved data, figure it out which one should we use, which one should not.
-- For now lets just uniform the server, we will only working on EUW1 server so every api request we made will be pulled from EUW server.
+- Changing the class name to Captalized, right now you use camel toes.
+- Reorganized the file to become more organize. Combine all the files into the folder model side.
+- Make an gloabal API so that when I used the model, I can just call the global API, restricted the user accessibility. (ask me if you don't understand this)
 
 @Phicks
 

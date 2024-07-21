@@ -7,7 +7,8 @@ def item_data():
 		data_dragon = json.load(json_file)
 		items = pd.DataFrame(data_dragon['items'])
 		allowed_prefixes = ['TFT11_Item', 'TFT_Item', 'TFT_Consumable']
-		# Create a boolean mask for rows starting with any of the allowed prefixes
+		
+  		# Create a boolean mask for rows starting with any of the allowed prefixes
 		mask = items['apiName'].str.startswith(tuple(allowed_prefixes))
 		# Filter the DataFrame using the mask
 		items = items[mask]
