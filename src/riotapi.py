@@ -43,6 +43,7 @@ class RiotAPI:
         url = f"https://euw1.api.riotgames.com/tft/league/v1/challenger?queue=RANKED_TFT&api_key={self.api_key}"
         return self.get(url)
 
+    
     def challengers_PUUID(self):
         # storing the puuid of each challenger players from get_challenger() function request
         challengers_puuid = []
@@ -51,12 +52,18 @@ class RiotAPI:
 
         for summoner_id in summoners_ids:
             url = f"https://euw1.api.riotgames.com/tft/league/v1/entries/by-summoner/{summoner_id}?api_key={self.api_key}"
+            
             try:
                 summoner_info = self.get(url)
-                if isinstance(summoner_info, list):
-                    for entry in summoner_info:
-                        if 'puuid' in entry:
-                            challengers_puuid.append(entry['puuid'])
+                
+                if not isinstance(summoner_info, list):
+                    continue
+                    
+                for entry in summoner_info:
+                    if 'puuid' in entry:
+                        challengers_puuid.append(entry['puuid'])
+                
+                
 
             except requests.exceptions.RequestException as e:
                 print(f"Error fetching puuid for summoner ID {summoner_id}: {e}")
@@ -101,11 +108,15 @@ class RiotAPI:
             return None
 
     def get_match_by_puuid(self, game_count):
-        #Storing every match ID of each players
+        """
+        Storing every match ID of each players
+        """
         all_match_ids = []
         summoner_ids = self.challengers_PUUID()
+        
         for summoner_id in summoner_ids:
             url = f"https://{self.world}.api.riotgames.com/tft/match/v1/matches/by-puuid/{summoner_id}/ids?start=0&count={game_count}&api_key={self.api_key}"
+            
             try:
                 match_id = self.get(url)
                 all_match_ids.extend(match_id)  # Add match IDs to the list
