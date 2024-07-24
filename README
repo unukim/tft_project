@@ -14,9 +14,9 @@ Run the file and it will show you the model training process, eventually you wil
 - Reorganized the file to become more organize. Combine all the files into the folder model side.
 - Make an gloabal API so that when I used the model, I can just call the global API, restricted the user accessibility. (ask me if you don't understand this)
 
+- Clustering data
+
 @Phicks
 
-- Model build working model with testing agency
-- Research on model, which parameter is require
-
-- Research on how to input data from database into the model
+- Build the PPO model using tensorflow.
+- Making the client side running
