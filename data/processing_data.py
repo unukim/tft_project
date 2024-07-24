@@ -14,7 +14,7 @@ class basic_preprocessing:
         self.unit_result = unit_result
         self.augment_list = pd.read_csv('augments_list.csv')
         self.champion_list = pd.read_csv('champs_list.csv')
-        self.item_result = pd.read_csv('items_list.csv')
+        self.item_list = pd.read_csv('items_list.csv')
 
         if not cluster_on:
             self.after_join = pd.merge(self.unit_result, self.game_result[
@@ -31,8 +31,14 @@ class basic_preprocessing:
                 ['Datetime', 'Game_id', 'Player_id', 'Placement', 'Deck', 'augment1', 'augment2', 'augment3',
                  'character_id', 'rarity', 'tier', 'item1', 'item2', 'item3']]
 
-    #When the unit is equipped with either thief's gloves or accomplice's gloves, convert the value of two other item slots to 'None'
+        self.change_gloves_item()
+        self.check_item_unit_itemver()
+
+
     def change_gloves_item(self):
+        '''
+        When the unit is equipped with either thief's gloves or accomplice's gloves, convert the value of two other item slots to 'None'
+        '''
 
         check = np.logical_or(self.after_join.item1 == "Thief's Gloves", self.after_join.item1 == "Accomplice's Gloves")
 
@@ -44,7 +50,6 @@ class basic_preprocessing:
 
     #Count the number of items that are equipped for each unit
     def check_item_unit_itemver(self):
-
         check = self.after_join.apply(lambda x: 3 - list(x).count('None'), axis=1)
 
         self.after_join['num_item'] = check
@@ -52,13 +57,13 @@ class basic_preprocessing:
         after_join.to_csv("afterjoin.csv", sep=',', index=False, encoding='utf-8')
 
         return self.after_join
-    def make_augment_stack(self):
+    def make_augment_stack(self, game_result, augment_list):
         # Extract relevant columns and drop duplicate rows from 'after_join' DataFrame
-        check = self.after_join[
+        check = game_result[
             ['Datetime', 'Game_id', 'Player_id', 'Placement', 'augment1', 'augment2', 'augment3']].drop_duplicates()
 
         # Create a copy of 'augment_list' to store results
-        result = self.augment_list.copy()
+        result = augment_list.copy()
 
         # Iterate through each placement position from 1 to 8
         for i in range(1, 9):
@@ -107,3 +112,144 @@ class basic_preprocessing:
         result.to_csv('augment.csv', sep=',', index=False, encoding='utf-8')
 
         return result
+
+    def make_unit_stack(self, game_result, champion_list):
+
+        # Create a copy of the champion list DataFrame to store results
+        result = champion_list.copy()
+        for placement in range(1, 9):
+            for tier in range(1, 4):
+                for num_item in range(1, 4):
+                    # Create a boolean array to filter rows that match the current placement, tier, and number of items
+                    case = np.logical_and(np.logical_and(game_result.Placement == placement, game_result.tier == tier),
+                                          game_result.num_item == num_item)
+                    # Use the boolean array to filter the game_result DataFrame and extract 'character_id' values
+                    champions = game_result.loc[case, 'character_id'].tolist()
+                    champions = Counter(champions)
+
+
+                    # Update the result DataFrame with the calculated scores for each champion
+                    for champion in champions.keys():
+                        number = champions[champion]
+
+                        if placement == 1:
+
+                            score = [number, number * placement, number * placement, number * tier, number * tier,
+                                     number * tier, number, number, number, number, num_item * number,
+                                     num_item * number, num_item * number, num_item * number]
+
+                            if num_item == 3:
+                                score += [number] * 4
+                            else:
+                                score += [0] * 4
+
+                        elif placement <= 4:
+
+                            score = [number, number * placement, number * placement, number * tier, number * tier, 0, 0,
+                                     0, number, number, num_item * number, num_item * number, num_item * number, 0]
+
+                            if num_item == 3:
+                                score += [number] * 3 + [0]
+
+                            else:
+                                score += [0] * 4
+                        else:
+
+                            score = [number, number * placement, 0, number * tier, 0, 0, 0, 0, 0, 0, num_item * number,
+                                     num_item * number, 0, 0]
+
+                            if num_item == 3:
+
+                                score += [number] * 2 + [0] * 2
+                            else:
+                                score += [0] * 4
+
+                        result.loc[result.Name == champion, ['Count', 'Ave_score', 'Ave_score_save', 'Ave_star',
+                                                             'Ave_star_save', 'Ave_star_win',
+                                                             'Win_count', 'Win_rate', 'Save_count', 'Save_rate',
+                                                             'Num_items_count', 'Num_items_avg', 'Num_items_save',
+                                                             'Num_items_win', 'Full_item_count', 'Full_item_rate',
+                                                             'Full_item_save', 'Full_item_win']] += score
+
+        result.Ave_score = round(result.Ave_score / result.Count, 1)
+        result.Ave_score_save = round(result.Ave_score_save / result.Save_count, 1)
+        result.Win_rate = round(result.Win_rate / result.Count * 100, 1)
+        result.Save_rate = round(result.Save_rate / result.Count * 100, 1)
+        result.Ave_star = round(result.Ave_star / result.Count, 1)
+        result.Ave_star_save = round(result.Ave_star_save / result.Save_count, 1)
+        result.Ave_star_win = round(result.Ave_star_win / result.Win_count, 1)
+        result.Num_items_avg = round(result.Num_items_avg / result.Count, 1)
+        result.Num_items_save = round(result.Num_items_save / result.Save_count, 1)
+        result.Num_items_win = round(result.Num_items_win / result.Win_count, 1)
+        result.Full_item_rate = round(result.Full_item_rate / result.Count * 100, 1)
+        result.Full_item_save = round(result.Full_item_save / result.Save_count * 100, 1)
+        result.Full_item_win = round(result.Full_item_win / result.Win_count * 100, 1)
+
+        return result
+
+    def make_item_stack(self, game_result, item_list):
+        result = item_list.copy()
+        for placement in range(1, 9):
+            check = game_result.loc[game_result.Placement == placement, :]
+            items = check.item1.tolist() + check.item2.tolist() + check.item3.tolist()
+            items = Counter(items)
+
+            for item in items.keys():
+                if item == 'None':
+                    continue
+                else:
+                    number = items[item]
+
+                    if placement == 1:
+                        item_score = [number, number * placement, number * placement, number, number, number, number]
+
+                    elif placement <= 4:
+                        item_score = [number, number * placement, number * placement, 0, 0, number, number]
+
+                    else:
+                        item_score = [number, number * placement, 0, 0, 0, 0, 0]
+
+                result.loc[
+                    result.Name == item, ['Count', 'Ave_score', 'Ave_score_save', 'Win_count', 'Win_rate', 'Save_count',
+                                          'Save_rate']] += item_score
+
+        result.Ave_score = round(result.Ave_score / result.Count, 1)
+        result.Ave_score_save = round(result.Ave_score_save / result.Save_count, 1)
+        result.Win_rate = round(result.Win_rate / result.Count * 100, 1)
+        result.Save_rate = round(result.Save_rate / result.Count * 100, 1)
+
+        return result
+
+    def augment_augment_crosscheck(self, augment):
+        check = np.logical_or(np.logical_or(self.after_join.augment1 == augment, self.after_join.augment2 == augment),
+                              self.after_join.augment3 == augment)
+
+        check = self.after_join[check]
+
+        check_augment = self.make_augment_stack(check, self.augment_list)
+
+        return check_augment
+
+    def augment_champion_crosscheck(self, augment):
+        check = np.logical_or(np.logical_or(self.after_join.augment1 == augment, self.after_join.augment2 == augment),
+                              self.after_join.augment3 == augment)
+
+        check = self.after_join[check]
+
+        check_champion = self.make_unit_stack(check, self.champion_list)
+
+        return check_champion
+
+    def augment_item_crosscheck(self, augment):
+        check = np.logical_or(np.logical_or(self.after_join.augment1 == augment, self.after_join.augment2 == augment),
+                              self.after_join.augment3 == augment)
+
+        check = self.after_join[check]
+
+        check_item = self.make_item_stack(check, self.item_list)
+
+        return check_item
+
+
+
+

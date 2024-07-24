@@ -69,7 +69,7 @@ class make_df:
         # Check if the unit dataframe is empty
         if units.shape[0] == 0:
             return pd.DataFrame(
-                columns=['character_id','champ_name','name','rarity', 'tier', 'items', 'item1', 'item2', 'item3'])
+                columns=['character_id','rarity', 'tier', 'items', 'item1', 'item2', 'item3'])
 
         item_list = []
         champ_name = []
@@ -163,7 +163,7 @@ class make_df:
             New_result['item_name'].append(np.array(unit_dataframe.loc[:, ['item1', 'item2', 'item3']]).tolist())
 
         New_result = pd.DataFrame(New_result)
-        #New_result.to_csv('game_result.csv', sep=',', index=False, encoding='utf-8')
+        New_result.to_csv('game_result.csv', sep=',', index=False, encoding='utf-8')
 
         return New_result
 
@@ -196,7 +196,7 @@ class make_df:
         all_units_df = pd.concat(all_units, ignore_index=True)
 
         # Save to CSV
-        #all_units_df.to_csv('unit_result.csv', sep=',', index=False, encoding='utf-8')
+        all_units_df.to_csv('unit_result.csv', sep=',', index=False, encoding='utf-8')
 
         return all_units_df
 

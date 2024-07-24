@@ -24,7 +24,7 @@ class make_list_df:
             'Count', 'Ave_score', 'Ave_score_save', 'Ave_star', 'Ave_star_save',
             'Ave_star_win', 'Win_count', 'Win_rate', 'Save_count', 'Save_rate',
             'Num_items_count', 'Num_items_avg', 'Num_items_save', 'Num_items_win',
-            'Full_items_count', 'Full_item_rate', 'Full_item_save', 'Full_item_win'
+            'Full_item_count', 'Full_item_rate', 'Full_item_save', 'Full_item_win'
         ]
         metrics_df = pd.DataFrame(0, index=self.champions.index, columns=metrics)
 

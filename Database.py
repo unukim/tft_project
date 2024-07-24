@@ -17,7 +17,7 @@ class DatabaseAPI:
         pass
     
     
-    def main():
+    def main(self):
         
         """
         Why putting here, can we did this while initiated
@@ -63,10 +63,29 @@ class DatabaseAPI:
 
         # Drop duplicate rows with the same game date, player, and game
         combined_game_results = combined_game_results.drop_duplicates(subset=['Datetime', 'Player_id', 'Game_id'])
-        combined_unit_results = combined_unit_results.drop_duplicates(subset=['Datetime', 'Player_id', 'Game_id'])
+        combined_unit_results = combined_unit_results.drop_duplicates(subset=['Datetime', 'Player_id', 'Game_id', 'character_id'])
 
         combined_game_results.to_csv('game_result.csv', sep=',', index=False, encoding='utf-8')
         combined_unit_results.to_csv('unit_result.csv', sep=',', index=False, encoding='utf-8')
 
         preprocessed_data = basic_preprocessing(combined_game_results, combined_unit_results)
-        # print(preprocessed_data.make_augment_stack())
+        augment = 'New Recruit'
+
+        augment_champion = pd.DataFrame(preprocessed_data.augment_champion_crosscheck(augment))
+        augment_champion.to_csv('aug_cham.csv',sep=',', index=False, encoding='utf-8')
+
+
+        # augment_stack = preprocessed_data.make_augment_stack(data).sort_values('Count', ascending = False)
+        # augment_stack.to_csv('augment_stack.csv', sep=',', index=False, encoding='utf-8')
+        #
+        # unit_stack = preprocessed_data.make_unit_stack(data).sort_values('Count', ascending = False)
+        # unit_stack.to_csv('unit_stack.csv', sep=',', index=False, encoding='utf-8')
+        #
+        # item_stack = preprocessed_data.make_item_stack(data).sort_values('Count', ascending = False)
+        # item_stack.to_csv('item_stack.csv',sep=',', index=False, encoding='utf-8')
+
+
+
+
+
+

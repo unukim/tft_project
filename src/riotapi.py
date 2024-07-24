@@ -11,7 +11,7 @@ class RiotAPI:
         The API key is retrieved from a file named "key.txt".
         """
         
-        self.api_key = get_api_key("key.txt")
+        self.api_key = get_api_key("src/key.txt")
         self.world = "europe"
 
 
