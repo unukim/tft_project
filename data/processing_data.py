@@ -109,12 +109,11 @@ class basic_preprocessing:
         result = result.reset_index(drop=True)
 
         # Save the result DataFrame to a CSV file
-        result.to_csv('augment.csv', sep=',', index=False, encoding='utf-8')
+        result.to_csv('augment_stack.csv', sep=',', index=False, encoding='utf-8')
 
         return result
 
     def make_unit_stack(self, game_result, champion_list):
-
         # Create a copy of the champion list DataFrame to store results
         result = champion_list.copy()
         for placement in range(1, 9):
@@ -185,6 +184,8 @@ class basic_preprocessing:
         result.Full_item_save = round(result.Full_item_save / result.Save_count * 100, 1)
         result.Full_item_win = round(result.Full_item_win / result.Win_count * 100, 1)
 
+        result.to_csv('unit_stack.csv', sep=',', index=False, encoding='utf-8')
+
         return result
 
     def make_item_stack(self, game_result, item_list):
@@ -218,14 +219,21 @@ class basic_preprocessing:
         result.Win_rate = round(result.Win_rate / result.Count * 100, 1)
         result.Save_rate = round(result.Save_rate / result.Count * 100, 1)
 
+        result.to_csv('item_stack.csv', sep=',', index=False, encoding='utf-8')
+
         return result
+
+    def make_stack(self):
+        augment_stack = self.make_augment_stack(self.after_join, self.augment_list).sort_values('Count', ascending = False)
+        unit_stack = self.make_unit_stack(self.after_join, self.champion_list).sort_values('Count', ascending = False)
+        item_stack = self.make_item_stack(self.after_join, self.item_list).sort_values('Count', ascending = False)
+
+        return augment_stack, unit_stack, item_stack
 
     def augment_augment_crosscheck(self, augment):
         check = np.logical_or(np.logical_or(self.after_join.augment1 == augment, self.after_join.augment2 == augment),
                               self.after_join.augment3 == augment)
-
         check = self.after_join[check]
-
         check_augment = self.make_augment_stack(check, self.augment_list)
 
         return check_augment
@@ -233,9 +241,7 @@ class basic_preprocessing:
     def augment_champion_crosscheck(self, augment):
         check = np.logical_or(np.logical_or(self.after_join.augment1 == augment, self.after_join.augment2 == augment),
                               self.after_join.augment3 == augment)
-
         check = self.after_join[check]
-
         check_champion = self.make_unit_stack(check, self.champion_list)
 
         return check_champion
@@ -243,12 +249,55 @@ class basic_preprocessing:
     def augment_item_crosscheck(self, augment):
         check = np.logical_or(np.logical_or(self.after_join.augment1 == augment, self.after_join.augment2 == augment),
                               self.after_join.augment3 == augment)
-
         check = self.after_join[check]
-
         check_item = self.make_item_stack(check, self.item_list)
 
         return check_item
+
+    def champion_champion_crosscheck(self, champion):
+        check = self.after_join.loc[self.after_join.character_id == champion, ['Game_id', 'Player_id']]
+        check = pd.merge(self.after_join, check, on=['Game_id', 'Player_id'])
+        check_champion = self.make_unit_stack(check, self.champion_list)
+
+        return check_champion
+
+    def champion_augment_crosscheck(self, champion):
+        check = self.after_join.character_id == champion
+        check = self.after_join[check]
+        check_augment = self.make_augment_stack(check, self.augment_list)
+
+        return check_augment
+
+    def champion_item_crosscheck(self, champion):
+        check = self.after_join.character_id == champion
+        check = self.after_join[check]
+        check_item = self.make_item_stack(check, self.item_list)
+
+        return check_item
+
+    def item_item_crosscheck(self, item):
+        check = np.logical_or(np.logical_or(self.after_join.item1 == item, self.after_join.item2 == item),
+                              self.after_join.item3 == item)
+        check = self.after_join[check]
+        check_item = self.make_item_stack(check, self.item_list)
+
+        return check_item
+
+    def item_augment_crosscheck(self, item):
+        check = np.logical_or(np.logical_or(self.after_join.item1 == item, self.after_join.item2 == item),
+                              self.after_join.item3 == item)
+        check = self.after_join[check]
+        check_augment = self.make_augment_stack(check, self.augment_list)
+
+        return check_augment
+
+    def item_champion_crosscheck(self, item):
+        check = np.logical_or(np.logical_or(self.after_join.item1 == item, self.after_join.item2 == item),
+                              self.after_join.item3 == item)
+        check = self.after_join[check]
+        check_champion = self.make_unit_stack(check, self.champion_list)
+
+        return check_champion
 
 
 

@@ -65,48 +65,52 @@ class make_df:
 
     # Create Unit dataframe
     def make_unit_dataframe(self, unit):
-        units = pd.DataFrame(unit)
-        # Check if the unit dataframe is empty
-        if units.shape[0] == 0:
-            return pd.DataFrame(
-                columns=['character_id','rarity', 'tier', 'items', 'item1', 'item2', 'item3'])
+        try:
+            units = pd.DataFrame(unit)
+            if units.shape[0] == 0:
+                return pd.DataFrame(
+                    columns=['character_id', 'rarity', 'tier', 'items', 'item1', 'item2', 'item3'])
 
-        item_list = []
-        champ_name = []
+            item_list = []
+            champ_name = []
 
-        # iterates over each character in the 'units' DataFrame
-        for i in range(len(units['character_id'])):
-            champ_name.append(self.champ_name[units['character_id'][i]])
-            check = units['itemNames'][i] #Extract Item Names
-            check += [0] * (3 - len(check)) # creates a list of zeros in the list --> ensures it has 3 elements
-            item_list.append(check)
-        units['items'] = item_list
+            for i in range(len(units['character_id'])):
+                character_id = units['character_id'][i]
+                if character_id in self.champ_name:
+                    champ_name.append(self.champ_name[character_id])
+                    check = units['itemNames'][i]
+                    check += [0] * (3 - len(check))
+                    item_list.append(check)
+            units['items'] = item_list
 
-        item1 = []
-        item2 = []
-        item3 = []
+            item1 = []
+            item2 = []
+            item3 = []
 
-        for item in item_list:
-            check_item = []
-            for i in item:
-                if i == 0:
-                    check_item.append('None')
-                else:
-                    item_name = self.item_data.loc[self.item_data.apiName == i, 'name'].values[0] #use the name of item from data dragon
-                    check_item.append(item_name)
-            item1.append(check_item[0])
-            item2.append(check_item[1])
-            item3.append(check_item[2])
+            for item in item_list:
+                check_item = []
+                for i in item:
+                    if i == 0:
+                        check_item.append('None')
+                    else:
+                        item_name = self.item_data.loc[self.item_data.apiName == i, 'name'].values[0]
+                        check_item.append(item_name)
+                item1.append(check_item[0])
+                item2.append(check_item[1])
+                item3.append(check_item[2])
 
-        units = pd.DataFrame(unit).drop(['itemNames'], axis=1)
+            units = pd.DataFrame(unit).drop(['itemNames'], axis=1)
+            units['item1'] = item1
+            units['item2'] = item2
+            units['item3'] = item3
+            units.character_id = list(map(lambda x: x.replace(self.version, ''), units.character_id))
+            units['champ_name'] = champ_name
 
-        units['item1'] = item1
-        units['item2'] = item2
-        units['item3'] = item3
-        units.character_id = list(map(lambda x: x.replace(self.version, ''), units.character_id))
-        units['champ_name'] = champ_name
+            return units
 
-        return units
+        except Exception as e:
+            print(f"Error in make_unit_dataframe: {e}")
+            return pd.DataFrame(columns=['character_id', 'rarity', 'tier', 'items', 'item1', 'item2', 'item3'])
 
 
     # Create the edited DataFrame!!

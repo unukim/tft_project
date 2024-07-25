@@ -40,7 +40,7 @@ class RiotAPI:
 
     def get_challenger(self):
         #Get the user information of every challenger players
-        url = f"https://euw1.api.riotgames.com/tft/league/v1/challenger?queue=RANKED_TFT&api_key={self.api_key}"
+        url = f"https://euw1.api.riotgames.com/tft/league/v1/master?queue=RANKED_TFT&api_key={self.api_key}"
         return self.get(url)
 
     
@@ -48,7 +48,7 @@ class RiotAPI:
         # storing the puuid of each challenger players from get_challenger() function request
         challengers_puuid = []
         challengers = self.get_challenger()
-        summoners_ids = [entry['summonerId'] for entry in challengers['entries'][:5]]
+        summoners_ids = [entry['summonerId'] for entry in challengers['entries'][:30]]
 
         for summoner_id in summoners_ids:
             url = f"https://euw1.api.riotgames.com/tft/league/v1/entries/by-summoner/{summoner_id}?api_key={self.api_key}"
