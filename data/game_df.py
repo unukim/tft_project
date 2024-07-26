@@ -4,7 +4,15 @@ import pandas as pd
 import json
 from datetime import datetime
 
-
+'''
+Class for creating the dataframe that stores the statistics of the match 
+add_augment_columns : Store the list of augments into 3 seperate columns
+make_trait_dataframe: Create 'trait' dataframe that contains the related information, will be added into total game summary dataframe as a seperate column
+make_unit_dataframe: Create 'unit' datafame that contains the related information,  will be added into total game summary dataframe as a seperate column
+make_new_game_result : Create the game summary dataframe that contains every necessary match data of each participant 
+make_trait_result: Return the csv file that only includes the player's 'trait' data
+make_unit_result: Return the csv file that only includes the player's 'unit' data
+'''
 class make_df:
 
     def __init__(self, df, version, data_dragon):
@@ -49,11 +57,7 @@ class make_df:
                                              'augment1', 'augment2', 'augment3', 'traits', 'units']]
 
         return self.game_result
-
-#creating traits column
-
     def make_trait_dataframe(self, trait):
-
         trait = pd.DataFrame(trait)
         # Check if the trait dataframe is empty
         if trait.shape[0] == 0:
@@ -63,7 +67,6 @@ class make_df:
      
         return trait
 
-    # Create Unit dataframe
     def make_unit_dataframe(self, unit):
         try:
             units = pd.DataFrame(unit)
@@ -108,14 +111,14 @@ class make_df:
 
             return units
 
+         #Skip if the function makes the error, it for some reasons often detects some cases with index error. Could not find where the issues are cause.
         except Exception as e:
             print(f"Error in make_unit_dataframe: {e}")
             return pd.DataFrame(columns=['character_id', 'rarity', 'tier', 'items', 'item1', 'item2', 'item3'])
 
-
-    # Create the edited DataFrame!!
     def make_new_game_result(self):
         self.add_augment_columns()
+        #Initiate the column for all necessary dataset
         New_result = {'Datetime': self.date,
                       'Game_id': self.df['metadata']['match_id'],
                       'Player_id': [],
@@ -152,6 +155,7 @@ class make_df:
 
         New_result['augment3'] += list(self.game_result.augment3)
 
+        #Append the dataframe for each player in the game
         for player in range(self.game_result.shape[0]):
             trait_dataframe = pd.DataFrame(self.game_result.loc[player, 'traits'])
             trait_dataframe = self.make_trait_dataframe(trait_dataframe)

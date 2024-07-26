@@ -1,0 +1,736 @@
+Name,Count,Ave_score,Ave_score_save,Win_count,Win_rate,Save_count,Save_rate
+The Boss,0,0,0,0,0,0,0
+Unburdened III,0,0,0,0,0,0,0
+Vanquisher Heart,0,0,0,0,0,0,0
+Protector Crown,0,0,0,0,0,0,0
+Ixtal Soul,0,0,0,0,0,0,0
+Executioner I,0,0,0,0,0,0,0
+Bastion Crown,0,0,0,0,0,0,0
+Gadgeteen Spirit,0,0,0,0,0,0,0
+Stationary Support I,0,0,0,0,0,0,0
+Ionia Heart,0,0,0,0,0,0,0
+Gunner Crown,0,0,0,0,0,0,0
+Cosmic Wisdom I,0,0,0,0,0,0,0
+Noxus Crown,0,0,0,0,0,0,0
+Coinpurse II +,0,0,0,0,0,0,0
+Chemtech Enhancements,0,0,0,0,0,0,0
+Nuts and Bolts II,0,0,0,0,0,0,0
+Deadeye Crest,0,0,0,0,0,0,0
+Nuts and Bolts III,0,0,0,0,0,0,0
+Knowledge Download III+,0,0,0,0,0,0,0
+Loving Invocation,0,0,0,0,0,0,0
+Nuts and Bolts I,0,0,0,0,0,0,0
+Challenger Heart,0,0,0,0,0,0,0
+Juggernaut Heart,0,0,0,0,0,0,0
+Magical Journey++,0,0,0,0,0,0,0
+Double Equipment,0,0,0,0,0,0,0
+Guild of Thieves,0,0,0,0,0,0,0
+Patient Study I,0,0,0,0,0,0,0
+Vanquisher Crown,0,0,0,0,0,0,0
+High-End Shopping I,0,0,0,0,0,0,0
+Patient Study III,0,0,0,0,0,0,0
+Tactical Superiority,0,0,0,0,0,0,0
+Sorcerer Crown,0,0,0,0,0,0,0
+Pumping Up I,0,0,0,0,0,0,0
+Coinpurse I +,0,0,0,0,0,0,0
+Rejuvenating Flames,0,0,0,0,0,0,0
+Freljord Crest,0,0,0,0,0,0,0
+Slayer Heart,0,0,0,0,0,0,0
+Piltover Heart,0,0,0,0,0,0,0
+Think Inside The Box I,0,0,0,0,0,0,0
+Stable Evolution,0,0,0,0,0,0,0
+Mercury Cannon: Overdrive,0,0,0,0,0,0,0
+Void Heart,0,0,0,0,0,0,0
+Shadow Isles Soul,0,0,0,0,0,0,0
+Haunted Shell,0,0,0,0,0,0,0
+Gunner Crest,0,0,0,0,0,0,0
+Magical Journey,0,0,0,0,0,0,0
+Superstars,0,0,0,0,0,0,0
+Dueling Gunners,0,0,0,0,0,0,0
+Amplify III,0,0,0,0,0,0,0
+Amplify II,0,0,0,0,0,0,0
+Think Inside The Box II,0,0,0,0,0,0,0
+Amplify I,0,0,0,0,0,0,0
+Think Inside The Box III,0,0,0,0,0,0,0
+Rising Infamy,0,0,0,0,0,0,0
+Gunner Heart,0,0,0,0,0,0,0
+Piltover Soul,0,0,0,0,0,0,0
+Slayer Crown,0,0,0,0,0,0,0
+Bilgewater Crest,0,0,0,0,0,0,0
+Strategist Soul,0,0,0,0,0,0,0
+Multicaster Heart,0,0,0,0,0,0,0
+Protector Crest,0,0,0,0,0,0,0
+Yordle Soul,0,0,0,0,0,0,0
+Unstable Yordle Delivery,0,0,0,0,0,0,0
+Bastion Crest,0,0,0,0,0,0,0
+Ravenous Hunter,0,0,0,0,0,0,0
+Yordle Heart,0,0,0,0,0,0,0
+Ixtal Crest,0,0,0,0,0,0,0
+On a Roll,0,0,0,0,0,0,0
+Zaun Heart,0,0,0,0,0,0,0
+Mana Jolt I,0,0,0,0,0,0,0
+Mana Jolt III,0,0,0,0,0,0,0
+Mana Jolt II,0,0,0,0,0,0,0
+Spectral Supplies,0,0,0,0,0,0,0
+Stolen Vitality,0,0,0,0,0,0,0
+Get Jinxed!,0,0,0,0,0,0,0
+Void Soul,0,0,0,0,0,0,0
+Unstable Yordle Delivery,0,0,0,0,0,0,0
+Strategist Crown,0,0,0,0,0,0,0
+No Scope,0,0,0,0,0,0,0
+Rogue Crown,0,0,0,0,0,0,0
+Cosmic Wisdom II,0,0,0,0,0,0,0
+Freljord Crown,0,0,0,0,0,0,0
+Executioner III,0,0,0,0,0,0,0
+Sorcerer Crest,0,0,0,0,0,0,0
+Chemtech Overdrive,0,0,0,0,0,0,0
+Demacia Heart,0,0,0,0,0,0,0
+Latent Forge,0,0,0,0,0,0,0
+Frequent Flier,0,0,0,0,0,0,0
+No Thaw,0,0,0,0,0,0,0
+Piltover Crest,0,0,0,0,0,0,0
+Adrenaline Rush,0,0,0,0,0,0,0
+Strength Of Ages I,0,0,0,0,0,0,0
+Zaun Crown,0,0,0,0,0,0,0
+Freljord Soul,0,0,0,0,0,0,0
+Berserkers II,0,0,0,0,0,0,0
+Phreaky Friday +,0,0,0,0,0,0,0
+Shurima Heart,0,0,0,0,0,0,0
+Shurima Crest,0,0,0,0,0,0,0
+Vanquisher Crest,0,0,0,0,0,0,0
+Coinpurse III +,0,0,0,0,0,0,0
+Titanic Strength,0,0,0,0,0,0,0
+Shadow Isles Heart,0,0,0,0,0,0,0
+Bilgewater Crown,0,0,0,0,0,0,0
+Pumping Up III,0,0,0,0,0,0,0
+Overcharged Manafont,0,0,0,0,0,0,0
+Knowledge Download II+,0,0,0,0,0,0,0
+Phreaky Friday,0,0,0,0,0,0,0
+Protector Heart,0,0,0,0,0,0,0
+Berserkers III,0,0,0,0,0,0,0
+Deadeye Heart,0,0,0,0,0,0,0
+Noxus Crest,0,0,0,0,0,0,0
+Suppressing Fire,0,0,0,0,0,0,0
+Deadeye Crown,0,0,0,0,0,0,0
+Bruiser Crown,0,0,0,0,0,0,0
+Fortune Favors the Bold,0,0,0,0,0,0,0
+Invoker Heart,0,0,0,0,0,0,0
+Juggernaut Crown,0,0,0,0,0,0,0
+Berserkers I,0,0,0,0,0,0,0
+Shadow Isles Crest,0,0,0,0,0,0,0
+Level Up.,0,0,0,0,0,0,0
+Invoker Crest,0,0,0,0,0,0,0
+Strategist Heart,0,0,0,0,0,0,0
+Coinpurse III,0,0,0,0,0,0,0
+Multicaster Soul,0,0,0,0,0,0,0
+Coinpurse II,0,0,0,0,0,0,0
+Coinpurse I,0,0,0,0,0,0,0
+Demonflare,0,0,0,0,0,0,0
+Targon Crown,0,0,0,0,0,0,0
+Targon Soul,0,0,0,0,0,0,0
+Targon Heart,0,0,0,0,0,0,0
+Bruiser Crest,0,0,0,0,0,0,0
+Bruiser Heart,0,0,0,0,0,0,0
+Action Surge II,0,0,0,0,0,0,0
+Sentinel's Shield,0,0,0,0,0,0,0
+Action Surge III,0,0,0,0,0,0,0
+Rogue Crest,0,0,0,0,0,0,0
+Freljord Heart,0,0,0,0,0,0,0
+Defensive Dash,0,0,0,0,0,0,0
+Action Surge,0,0,0,0,0,0,0
+Sentinel's Spirit,0,0,0,0,0,0,0
+Juggernaut Crest,0,0,0,0,0,0,0
+Challenger Crest,0,0,0,0,0,0,0
+Zaun Crest,0,0,0,0,0,0,0
+Slayer's Resolve,0,0,0,0,0,0,0
+Bastion Heart,0,0,0,0,0,0,0
+Executioner II,0,0,0,0,0,0,0
+Slayer Crest,0,0,0,0,0,0,0
+Petricite Shackles,0,0,0,0,0,0,0
+Strategist Crest,0,0,0,0,0,0,0
+Glacial Breeze,0,0,0,0,0,0,0
+Shimmering Inventors,0,0,0,0,0,0,0
+Morning Light,0,0,0,0,0,0,0
+Noxus Heart,0,0,0,0,0,0,0
+Knowledge Download 1+,0,0,0,0,0,0,0
+Riftwalk,0,0,0,0,0,0,0
+Long Distance Pals,0,0,0,0,0,0,0
+Money Laundering,0,0,0,0,0,0,0
+Ixtal Heart,0,0,0,0,0,0,0
+Invoker Crown,0,0,0,0,0,0,0
+Eagle Eye,0,0,0,0,0,0,0
+Level Up?,0,0,0,0,0,0,0
+Broken Trade Sector,0,0,0,0,0,0,0
+Total Domination,0,0,0,0,0,0,0
+Targon Crest,0,0,0,0,0,0,0
+All Natural III,0,0,0,0,0,0,0
+Ionia Crown,0,0,0,0,0,0,0
+Execute,0,0,0,0,0,0,0
+Demacia Crest,0,0,0,0,0,0,0
+Ionia Crest,0,0,0,0,0,0,0
+Ixtal Crown,0,0,0,0,0,0,0
+Magical Journey+,0,0,0,0,0,0,0
+Stellacorn's Blessing,0,0,0,0,0,0,0
+Challenger Unity,0,0,0,0,0,0,0
+Conditioning I,0,0,0,0,0,0,0
+Rising Infamy+,0,0,0,0,0,0,0
+Rising Infamy++,0,0,0,0,0,0,0
+Shurima Crown,0,0,0,0,0,0,0
+Conditioning III,0,0,0,0,0,0,0
+Conditioning II,0,0,0,0,0,0,0
+Void Crest,0,0,0,0,0,0,0
+Shurima's Legacy,0,0,0,0,0,0,0
+Guinsoo's Large Bead,0,0,0,0,0,0,0
+Pumping Up II,0,0,0,0,0,0,0
+Rogue Heart,0,0,0,0,0,0,0
+Demacia Crown,0,0,0,0,0,0,0
+Perfected Repetition,0,0,0,0,0,0,0
+Piltover Crown,0,0,0,0,0,0,0
+Sorcerer Heart,0,0,0,0,0,0,0
+Edgy III,0,0,0,0,0,0,0
+A Cut Above,0,0,0,0,0,0,0
+Edgy II,0,0,0,0,0,0,0
+Team Building,0,0,0,0,0,0,0
+Edgy I,0,0,0,0,0,0,0
+Shadow Isles Crown,0,0,0,0,0,0,0
+All That Shimmers,0,0,0,0,0,0,0
+Vampiric Blades,0,0,0,0,0,0,0
+Challenger Crown,0,0,0,0,0,0,0
+Learning Potential,0,0,0,0,0,0,0
+Void Crown,0,0,0,0,0,0,0
+Bilgewater Heart,0,0,0,0,0,0,0
+Winds of War,0,0,0,0,0,0,0
+Blood Price III,0,0,0,0,0,0,0
+Blood Price II,0,0,0,0,0,0,0
+Blood Price I,0,0,0,0,0,0,0
+Return on Investment,0,0,0,0,0,0,0
+Lock Step,0,0,0,0,0,0,0
+Shimmering Inventors,0,0,0,0,0,0,0
+Missing Link,0,0,0,0,0,0,0
+The Golden Egg,0,0,0,0,0,0,0
+The Golden Egg,0,0,0,0,0,0,0
+Living Forge,0,0,0,0,0,0,0
+Salvage Bin+,0,0,0,0,0,0,0
+Salvage Bin,0,0,0,0,0,0,0
+What The Forge,0,0,0,0,0,0,0
+Dedication,0,0,0,0,0,0,0
+Three's a Crowd,0,0,0,0,0,0,0
+Wellness Trust,0,0,0,0,0,0,0
+Tiny Titans,0,0,0,0,0,0,0
+Everything Must Go!,0,0,0,0,0,0,0
+Rich Get Richer,0,0,0,0,0,0,0
+Cutting Corners,0,0,0,0,0,0,0
+Team Building,0,0,0,0,0,0,0
+Tiniest Titan,0,0,0,0,0,0,0
+Young and Wild and Free,0,0,0,0,0,0,0
+Cybernetic Implants I,0,0,0,0,0,0,0
+Ba-BOOM!,0,0,0,0,0,0,0
+Hustler,0,0,0,0,0,0,0
+Crown Guarded,0,0,0,0,0,0,0
+Cybernetic Implants III,0,0,0,0,0,0,0
+Luden's Echo III,0,0,0,0,0,0,0
+Mana Burn,0,0,0,0,0,0,0
+Cybernetic Implants II,0,0,0,0,0,0,0
+Luden's Echo II,0,0,0,0,0,0,0
+Crash Test Dummies,0,0,0,0,0,0,0
+Luden's Echo I,0,0,0,0,0,0,0
+Lucky Gloves+,0,0,0,0,0,0,0
+Gifts from the Fallen,0,0,0,0,0,0,0
+Trash to Treasure,0,0,0,0,0,0,0
+"Tiny, but Deadly",0,0,0,0,0,0,0
+Urf's Grab Bag II,0,0,0,0,0,0,0
+Sharing Is Caring,0,0,0,0,0,0,0
+Last Stand,0,0,0,0,0,0,0
+Scapegoat,0,0,0,0,0,0,0
+Missed Connections,0,0,0,0,0,0,0
+Lucky Streak,0,0,0,0,0,0,0
+A Cut Above,0,0,0,0,0,0,0
+Pick of the Litter+,0,0,0,0,0,0,0
+Blank Slate,0,0,0,0,0,0,0
+Scoreboard Scrapper,0,0,0,0,0,0,0
+Ascension,0,0,0,0,0,0,0
+High Roller,0,0,0,0,0,0,0
+Transfusion I,0,0,0,0,0,0,0
+Wandering Trainer II,0,0,0,0,0,0,0
+Wise Spending,0,0,0,0,0,0,0
+Fully Adapted,0,0,0,0,0,0,0
+Big Gains,0,0,0,0,0,0,0
+You Have My Bow,0,0,0,0,0,0,0
+Impenetrable Bulwark,0,0,0,0,0,0,0
+Pandora's Bench,0,0,0,0,0,0,0
+March of Progress,0,0,0,0,0,0,0
+Makeshift Armor I,0,0,0,0,0,0,0
+Makeshift Armor II,0,0,0,0,0,0,0
+Ancient Archives II,0,0,0,0,0,0,0
+Jeweled Lotus I,0,0,0,0,0,0,0
+Makeshift Armor III,0,0,0,0,0,0,0
+Stimpack,0,0,0,0,0,0,0
+Windfall+,0,0,0,0,0,0,0
+Phony Frontline,0,0,0,0,0,0,0
+Frequent Flier,0,0,0,0,0,0,0
+Reach the Summit,0,0,0,0,0,0,0
+Cybernetic Bulk II,0,0,0,0,0,0,0
+Cybernetic Bulk III,0,0,0,0,0,0,0
+Big Friend I,0,0,0,0,0,0,0
+Cybernetic Bulk I,0,0,0,0,0,0,0
+Infusion,0,0,0,0,0,0,0
+Help Is On The Way,0,0,0,0,0,0,0
+Pumping Up I,0,0,0,0,0,0,0
+Best Friends III,0,0,0,0,0,0,0
+Unified Resistance I,0,0,0,0,0,0,0
+Best Friends II,0,0,0,0,0,0,0
+Meditation I,0,0,0,0,0,0,0
+Cluttered Mind,0,0,0,0,0,0,0
+Best Friends I,0,0,0,0,0,0,0
+Meditation III,0,0,0,0,0,0,0
+Unified Resistance II,0,0,0,0,0,0,0
+Meditation II,0,0,0,0,0,0,0
+Buried Treasures III,0,0,0,0,0,0,0
+Supercombobulator,0,0,0,0,0,0,0
+Gargantuan Resolve,0,0,0,0,0,0,0
+Healing Orbs I,0,0,0,0,0,0,0
+Portable Forge++,0,0,0,0,0,0,0
+Martyr,0,0,0,0,0,0,0
+Social Distancing III,0,0,0,0,0,0,0
+Blinding Speed,0,0,0,0,0,0,0
+Ancient Archives I,0,0,0,0,0,0,0
+Social Distancing II,0,0,0,0,0,0,0
+Lucky Gloves,0,0,0,0,0,0,0
+Endurance Training,0,0,0,0,0,0,0
+Portable Forge+,0,0,0,0,0,0,0
+Inconsistency,0,0,0,0,0,0,0
+Teaming Up I,0,0,0,0,0,0,0
+Rich Get Richer+,0,0,0,0,0,0,0
+Electrocharge III,0,0,0,0,0,0,0
+Electrocharge II,0,0,0,0,0,0,0
+Axiom Arc II,0,0,0,0,0,0,0
+Lunch Money,0,0,0,0,0,0,0
+Electrocharge I,0,0,0,0,0,0,0
+Woodland Charm,0,0,0,0,0,0,0
+Teaming Up II,0,0,0,0,0,0,0
+Item Grab Bag II,0,0,0,0,0,0,0
+Spoils of War I,0,0,0,0,0,0,0
+Not Today,0,0,0,0,0,0,0
+Item Grab Bag I,0,0,0,0,0,0,0
+Going Long,0,0,0,0,0,0,0
+Unleashed Arcana,0,0,0,0,0,0,0
+Phreaky Friday +,0,0,0,0,0,0,0
+Tri Force I,0,0,0,0,0,0,0
+Sunfire Board,0,0,0,0,0,0,0
+Tri Force III,0,0,0,0,0,0,0
+Iron Assets,0,0,0,0,0,0,0
+Tri Force II,0,0,0,0,0,0,0
+Think Fast,0,0,0,0,0,0,0
+Hedge Fund+,0,0,0,0,0,0,0
+Sticks And Stones,0,0,0,0,0,0,0
+Blue Battery II,0,0,0,0,0,0,0
+Combat Caster,0,0,0,0,0,0,0
+Blue Battery I,0,0,0,0,0,0,0
+AFK,0,0,0,0,0,0,0
+Hedge Fund,0,0,0,0,0,0,0
+Stationary Support III,0,0,0,0,0,0,0
+Stationary Support II,0,0,0,0,0,0,0
+Stationary Support I,0,0,0,0,0,0,0
+Long Distance Pals,0,0,0,0,0,0,0
+Cruel Pact,0,0,0,0,0,0,0
+Social Distancing I,0,0,0,0,0,0,0
+Salvage Bin,0,0,0,0,0,0,0
+Radiant Refactor,0,0,0,0,0,0,0
+Patient Study,0,0,0,0,0,0,0
+High End Shopping II,0,0,0,0,0,0,0
+Slammin',0,0,0,0,0,0,0
+Endless Hordes,0,0,0,0,0,0,0
+Blood Money,0,0,0,0,0,0,0
+Exiles I,0,0,0,0,0,0,0
+Capricious Forge,0,0,0,0,0,0,0
+Return on Investment,0,0,0,0,0,0,0
+Trade Sector+,0,0,0,0,0,0,0
+Twin Terror I,0,0,0,0,0,0,0
+Vampirism I,0,0,0,0,0,0,0
+Endless Hordes +,0,0,0,0,0,0,0
+Twin Terror II,0,0,0,0,0,0,0
+Accomplice,0,0,0,0,0,0,0
+Inspiring Epitaph,0,0,0,0,0,0,0
+Good For Something I,0,0,0,0,0,0,0
+Salvage Bin+,0,0,0,0,0,0,0
+Keepers I,0,0,0,0,0,0,0
+Low Interest Rates,0,0,0,0,0,0,0
+Keepers II,0,0,0,0,0,0,0
+Lucky Streak,0,0,0,0,0,0,0
+Preparation III,0,0,0,0,0,0,0
+Preparation II,0,0,0,0,0,0,0
+Built Different II,0,0,0,0,0,0,0
+Blistering Strikes,0,0,0,0,0,0,0
+Built Different III,0,0,0,0,0,0,0
+Two for One,0,0,0,0,0,0,0
+Parting Gifts,0,0,0,0,0,0,0
+Slammin'+,0,0,0,0,0,0,0
+Stand United II,0,0,0,0,0,0,0
+Level Up!,0,0,0,0,0,0,0
+Stand United III,0,0,0,0,0,0,0
+Thrill of the Hunt I,0,0,0,0,0,0,0
+Built Different I,0,0,0,0,0,0,0
+Second Wind II,0,0,0,0,0,0,0
+Second Wind I,0,0,0,0,0,0,0
+Stand United I,0,0,0,0,0,0,0
+Jeweled Lotus II,0,0,0,0,0,0,0
+Stars are Born,0,0,0,0,0,0,0
+Thrill of the Hunt II,0,0,0,0,0,0,0
+Binary Airdrop,0,0,0,0,0,0,0
+Indomitable Will,0,0,0,0,0,0,0
+"One, Two, Five!",0,0,0,0,0,0,0
+Silver Spoon,0,0,0,0,0,0,0
+Learning to Spell,0,0,0,0,0,0,0
+All Natural II,0,0,0,0,0,0,0
+Epoch+,0,0,0,0,0,0,0
+ The Golden Remover,0,0,0,0,0,0,0
+Buried Treasures I,0,0,0,0,0,0,0
+Early Education,0,0,0,0,0,0,0
+Ones Twos Three,0,0,0,0,0,0,0
+Support Cache,0,0,0,0,0,0,0
+Phreaky Friday,0,0,0,0,0,0,0
+Verdant Veil,0,0,0,0,0,0,0
+Shopping Spree,0,0,0,0,0,0,0
+Windfall++,0,0,0,0,0,0,0
+Jeweled Lotus II,0,0,0,0,0,0,0
+Scrappy Inventions,0,0,0,0,0,0,0
+Lethal Tempo,0,0,0,0,0,0,0
+Component Grab Bag,0,0,0,0,0,0,0
+Cursed Crown,0,0,0,0,0,0,0
+Raining Gold+,0,0,0,0,0,0,0
+Infernal Contract,0,0,0,0,0,0,0
+Component Buffet,0,0,0,0,0,0,0
+Prizefighter,0,0,0,0,0,0,0
+Heroic Grab Bag,0,0,0,0,0,0,0
+Preparation I,0,0,0,0,0,0,0
+Roll The Dice,0,0,0,0,0,0,0
+Ascension,0,0,0,0,0,0,0
+Pandora's Items II,0,0,0,0,0,0,0
+Golden Ticket,0,0,0,0,0,0,0
+Recombobulator,0,0,0,0,0,0,0
+Over Encumbered,0,0,0,0,0,0,0
+Hedge Fund++,0,0,0,0,0,0,0
+Little Buddies,0,0,0,0,0,0,0
+Transfusion III,0,0,0,0,0,0,0
+Pumping Up III,0,0,0,0,0,0,0
+Shock Treatment,0,0,0,0,0,0,0
+Pumping Up II,0,0,0,0,0,0,0
+What Doesn't Kill You,0,0,0,0,0,0,0
+Cybernetic Shell I,0,0,0,0,0,0,0
+Raining Gold,0,0,0,0,0,0,0
+Cybernetic Shell III,0,0,0,0,0,0,0
+Cybernetic Shell II,0,0,0,0,0,0,0
+Metabolic Accelerator,0,0,0,0,0,0,0
+Idealism,0,0,0,0,0,0,0
+Clear Mind,0,0,0,0,0,0,0
+You Have My Sword,0,0,0,0,0,0,0
+Better Together,0,0,0,0,0,0,0
+Switching Gears,0,0,0,0,0,0,0
+Wandering Trainer I,0,0,0,0,0,0,0
+Rolling For Days I,0,0,0,0,0,0,0
+Band of Thieves II,0,0,0,0,0,0,0
+Build a Bud!,0,0,0,0,0,0,0
+Heavy Hitters,0,0,0,0,0,0,0
+Determined Investors,0,0,0,0,0,0,0
+Final Ascension,0,0,0,0,0,0,0
+First Aid Kit II,0,0,0,0,0,0,0
+Dragon's Spirit,0,0,0,0,0,0,0
+Consistency,0,0,0,0,0,0,0
+Silver Ticket,0,0,0,0,0,0,0
+Contagion,0,0,0,0,0,0,0
+Starter Kit,0,0,0,0,0,0,0
+Lategame Specialist,0,0,0,0,0,0,0
+Too Much Candy,0,0,0,0,0,0,0
+Birthday Present,0,0,0,0,0,0,0
+IRA,0,0,0,0,0,0,0
+All Natural I,0,0,0,0,0,0,0
+Shoplifting,0,0,0,0,0,0,0
+Branching Out,0,0,0,0,0,0,0
+Spoils of War III,0,0,0,0,0,0,0
+Spoils of War II,0,0,0,0,0,0,0
+Exiles III,0,0,0,0,0,0,0
+Exiles II,0,0,0,0,0,0,0
+On a Roll,0,0,0,0,0,0,0
+ReinFOURcement,0,0,0,0,0,0,0
+Weakspot,0,0,0,0,0,0,0
+Escort Quest,0,0,0,0,0,0,0
+Sleight of Hand,0,0,0,0,0,0,0
+Scoped Weapons,0,0,0,0,0,0,0
+True Twos,0,0,0,0,0,0,0
+Transfusion II,0,0,0,0,0,0,0
+Good For Something II,0,0,0,0,0,0,0
+Pandora's Items III,0,0,0,0,0,0,0
+Tactician's Tools,0,0,0,0,0,0,0
+Trade Sector,0,0,0,0,0,0,0
+Unburdened II,0,0,0,0,0,0,0
+Big Grab Bag,0,0,0,0,0,0,0
+Caretaker's Favor,0,0,0,0,0,0,0
+Battlemage I,0,0,0,0,0,0,0
+Celestial Blessing I,0,0,0,0,0,0,0
+Caretaker's Chosen,0,0,0,0,0,0,0
+Unburdened I,0,0,0,0,0,0,0
+Celestial Blessing II,0,0,0,0,0,0,0
+Battlemage III,0,0,0,0,0,0,0
+Prismatic Ticket,0,0,0,0,0,0,0
+Celestial Blessing III,0,0,0,0,0,0,0
+Caretaker's Ally,0,0,0,0,0,0,0
+Battlemage II,0,0,0,0,0,0,0
+Calculated Loss,0,0,0,0,0,0,0
+Cybernetic Leech III,0,0,0,0,0,0,0
+Balanced Budget,0,0,0,0,0,0,0
+Risky Moves,0,0,0,0,0,0,0
+New Recruit,0,0,0,0,0,0,0
+Cybernetic Leech II,0,0,0,0,0,0,0
+Cybernetic Leech I,0,0,0,0,0,0,0
+Library Card,0,0,0,0,0,0,0
+Band of Thieves I,0,0,0,0,0,0,0
+Balanced Budget+,0,0,0,0,0,0,0
+Jeweled Lotus III,0,0,0,0,0,0,0
+Living Forge,0,0,0,0,0,0,0
+Wandering Trainer I,0,0,0,0,0,0,0
+Knife's Edge III,0,0,0,0,0,0,0
+Vampirism I,0,0,0,0,0,0,0
+Knife's Edge II,0,0,0,0,0,0,0
+Windfall,0,0,0,0,0,0,0
+Overwhelming Force,0,0,0,0,0,0,0
+Knife's Edge I,0,0,0,0,0,0,0
+Radiant Relics,0,0,0,0,0,0,0
+Big Friend II,0,0,0,0,0,0,0
+Double Trouble I,0,0,0,0,0,0,0
+Future Sight II,0,0,0,0,0,0,0
+Know Your Enemy,0,0,0,0,0,0,0
+Featherweights I,0,0,0,0,0,0,0
+Silver Veil,0,0,0,0,0,0,0
+Double Trouble II,0,0,0,0,0,0,0
+Buried Treasures II,0,0,0,0,0,0,0
+Double Trouble III,0,0,0,0,0,0,0
+Featherweights III,0,0,0,0,0,0,0
+Three's Company,0,0,0,0,0,0,0
+Tons of Stats!,0,0,0,0,0,0,0
+Fine Vintage,0,0,0,0,0,0,0
+Featherweights II,0,0,0,0,0,0,0
+First Aid Kit I,0,0,0,0,0,0,0
+Vampirism II,0,0,0,0,0,0,0
+Tiniest Titan+,0,0,0,0,0,0,0
+Final Reserves,0,0,0,0,0,0,0
+Pick of the Litter,0,0,0,0,0,0,0
+Partial Ascension,0,0,0,0,0,0,0
+Epoch,0,0,0,0,0,0,0
+Harmacist I,0,0,0,0,0,0,0
+Healing Orbs II,0,0,0,0,0,0,0
+Combat Training,0,0,0,0,0,0,0
+Harmacist II,0,0,0,0,0,0,0
+Pandora's Items,0,0,0,0,0,0,0
+Portable Forge,0,0,0,0,0,0,0
+Harmacist III,0,0,0,0,0,0,0
+Magic Wand,0,0,0,0,0,0,0
+Latent Forge,0,0,0,0,0,0,0
+Cybernetic Uplink I,0,0,0,0,0,0,0
+Blood Money,0,0,0,0,0,0,0
+Cybernetic Uplink II,0,0,0,0,0,0,0
+Cybernetic Uplink III,0,0,0,0,0,0,0
+Two Healthy,0,0,0,0,0,0,0
+Future Sight I,0,0,0,0,0,0,0
+Teaming Up III,0,0,0,0,0,0,0
+Item Grab Bag III,0,0,0,0,0,0,0
+Stars are Born,0,0,0,0,0,0,0
+Shopping Spree,0,0,0,0,0,0,0
+Buried Treasures II,0,0,0,0,0,0,0
+Ancient Archives I,0,0,0,0,0,0,0
+Level Up!,0,0,0,0,0,0,0
+Hedge Fund,0,0,0,0,0,0,0
+Final Grab Bag,0,0,0,0,0,0,0
+Ones Twos Three,0,0,0,0,0,0,0
+AFK,0,0,0,0,0,0,0
+Rolling For Days III,0,0,0,0,0,0,0
+Rolling For Days II,0,0,0,0,0,0,0
+Transfusion I,0,0,0,0,0,0,0
+It Pays To Learn,0,0,0,0,0,0,0
+Jeweled Lotus III,0,0,0,0,0,0,0
+Spoils of War I,0,0,0,0,0,0,0
+Tiny Grab Bag,0,0,0,0,0,0,0
+Pandora's Items III,0,0,0,0,0,0,0
+Transfusion II,0,0,0,0,0,0,0
+Tiny Titans,0,0,0,0,0,0,0
+Small Forge,0,0,0,0,0,0,0
+Medium Forge,0,0,0,0,0,0,0
+Large Forge,0,0,0,0,0,0,0
+Well-Earned Comforts I,0,0,0,0,0,0,0
+Portable Forge,0,0,0,0,0,0,0
+Starter Kit,0,0,0,0,0,0,0
+Cutting Corners,0,0,0,0,0,0,0
+It Pays to Learn II,0,0,0,0,0,0,0
+Living Forge,0,0,0,0,0,0,0
+Balanced Budget,0,0,0,0,0,0,0
+Branching Out,0,0,0,0,0,0,0
+Training Reward III,0,0,0,0,0,0,0
+Tiniest Titan,0,0,0,0,0,0,0
+Gotta Go Fast!,0,0,0,0,0,0,0
+Job's Done,0,0,0,0,0,0,0
+Gotta Go Fast!!! III,0,0,0,0,0,0,0
+Pandora's Items,0,0,0,0,0,0,0
+Pumping Up II,0,0,0,0,0,0,0
+Pandora's Items II,0,0,0,0,0,0,0
+Pumping Up III,0,0,0,0,0,0,0
+It Pays to Learn III,0,0,0,0,0,0,0
+Caretaker's Ally,0,0,0,0,0,0,0
+Caretaker's Chosen,0,0,0,0,0,0,0
+Caretaker's Favor,0,0,0,0,0,0,0
+Rich Get Richer,0,0,0,0,0,0,0
+Buried Treasures III,0,0,0,0,0,0,0
+Buried Treasures I,0,0,0,0,0,0,0
+Latent Forge,0,0,0,0,0,0,0
+Gotta Go Fast! II,0,0,0,0,0,0,0
+Training Reward,0,0,0,0,0,0,0
+Final Grab Bag II,0,0,0,0,0,0,0
+Battle Ready II,0,0,0,0,0,0,0
+Balanced Budget III,0,0,0,0,0,0,0
+Money!,0,0,0,0,0,0,0
+Jeweled Lotus I,0,0,0,0,0,0,0
+Knowledge Download II,0,0,0,0,0,0,0
+Knowledge Download III,0,0,0,0,0,0,0
+Battle Ready,0,0,0,0,0,0,0
+Knowledge Download I,0,0,0,0,0,0,0
+Silver Ticket,0,0,0,0,0,0,0
+Urf's Grab Bag,0,0,0,0,0,0,0
+Metabolic Accelerator,0,0,0,0,0,0,0
+Patient Study,0,0,0,0,0,0,0
+Job Well Done,0,0,0,0,0,0,0
+Trade Sector,0,0,0,0,0,0,0
+Battle Ready III,0,0,0,0,0,0,0
+Giant Grab Bag,0,0,0,0,0,0,0
+Spoils of War II,0,0,0,0,0,0,0
+Spoils of War III,0,0,0,0,0,0,0
+Tiny Power I,0,0,0,0,0,0,0
+Tiny Power III,0,0,0,0,0,0,0
+Tiny Power II,0,0,0,0,0,0,0
+Jeweled Lotus II,0,0,0,0,0,0,0
+Money Money!,0,0,0,0,0,0,0
+Masterful Job,0,0,0,0,0,0,0
+Money Money Money!,0,0,0,0,0,0,0
+Training Reward II,0,0,0,0,0,0,0
+Item Grab Bag II,0,0,0,0,0,0,0
+Ancient Archives II,0,0,0,0,0,0,0
+Pumping Up I,0,0,0,0,0,0,0
+Well-Earned Comforts II,0,0,0,0,0,0,0
+Well-Earned Comforts III,0,0,0,0,0,0,0
+Transfusion III,0,0,0,0,0,0,0
+Midnight Siphon,0,0,0,0,0,0,0
+Dynamic Duo,0,0,0,0,0,0,0
+Raid Boss,0,0,0,0,0,0,0
+Bruiser Crown,0,0,0,0,0,0,0
+Behemoth Crest,0,0,0,0,0,0,0
+Exalted Crest,0,0,0,0,0,0,0
+Dragonlord Crown,0,0,0,0,0,0,0
+Porcelain Crest,0,0,0,0,0,0,0
+Lucky Ricochet,0,0,0,0,0,0,0
+Mythic Crest,0,0,0,0,0,0,0
+Call to Chaos,0,0,0,0,0,0,0
+Ethereal Blades+,0,0,0,0,0,0,0
+Storyweaver Crest,0,0,0,0,0,0,0
+Storied Champion,0,0,0,0,0,0,0
+Sage Crown,0,0,0,0,0,0,0
+Drop Blossom!,0,0,0,0,0,0,0
+Heavenly Crest,0,0,0,0,0,0,0
+Duelist Crest,0,0,0,0,0,0,0
+Extended Duel,0,0,0,0,0,0,0
+Fated Crown,0,0,0,0,0,0,0
+Spirit Guardians,0,0,0,0,0,0,0
+Ethereal Blades,0,0,0,0,0,0,0
+At What Cost,0,0,0,0,0,0,0
+Arcanist Crown,0,0,0,0,0,0,0
+Behemoth Crown,0,0,0,0,0,0,0
+Divine Rolls,0,0,0,0,0,0,0
+Inkshadow Crest,0,0,0,0,0,0,0
+Warden Crown,0,0,0,0,0,0,0
+Mythic Crown,0,0,0,0,0,0,0
+Lucky Paws,0,0,0,0,0,0,0
+Storyweaver Crown,0,0,0,0,0,0,0
+Bruiser Crest,0,0,0,0,0,0,0
+Wrath of the Moon,0,0,0,0,0,0,0
+Drop Blossom!+,0,0,0,0,0,0,0
+Fortune Crest,0,0,0,0,0,0,0
+Umbral Crest,0,0,0,0,0,0,0
+Mana Shield,0,0,0,0,0,0,0
+Midnight Siphon+,0,0,0,0,0,0,0
+Invoker Crown,0,0,0,0,0,0,0
+Boiling Point,0,0,0,0,0,0,0
+Enter the Dragon,0,0,0,0,0,0,0
+Full Sleeve,0,0,0,0,0,0,0
+Exalted Crown,0,0,0,0,0,0,0
+Dryad Crest,0,0,0,0,0,0,0
+Well Fed,0,0,0,0,0,0,0
+Dragonlord Crest,0,0,0,0,0,0,0
+Haunted House,0,0,0,0,0,0,0
+Call to Adventure,0,0,0,0,0,0,0
+Fortune Crown,0,0,0,0,0,0,0
+Ghostly Crest,0,0,0,0,0,0,0
+Arcanist Crest,0,0,0,0,0,0,0
+Sage Crest,0,0,0,0,0,0,0
+Altruist Crest,0,0,0,0,0,0,0
+Fated Crest,0,0,0,0,0,0,0
+Mind Over Matter,0,0,0,0,0,0,0
+Porcelain Crown,0,0,0,0,0,0,0
+Reaper Crest,0,0,0,0,0,0,0
+Sniper Crest,0,0,0,0,0,0,0
+Inkshadow Crown,0,0,0,0,0,0,0
+Warden Crest,0,0,0,0,0,0,0
+Invoker Crest,0,0,0,0,0,0,0
+Dryad Crown,0,0,0,0,0,0,0
+Long Shot,0,0,0,0,0,0,0
+Venerable Piggy Bank,0,0,0,0,0,0,0
+My Heart Will Go On,0,0,0,0,0,0,0
+Duelist Crown,0,0,0,0,0,0,0
+The Road Less Traveled,0,0,0,0,0,0,0
+Grim Harvest,0,0,0,0,0,0,0
+Umbral Crown,0,0,0,0,0,0,0
+Mulched,0,0,0,0,0,0,0
+Heavenly Crown,0,0,0,0,0,0,0
+Ghostly Crown,0,0,0,0,0,0,0
+Reaper Crown,0,0,0,0,0,0,0
+Sniper Crown,0,0,0,0,0,0,0
+It's Going to be Epic,0,0,0,0,0,0,0
+Altruist Crown,0,0,0,0,0,0,0
+Elite Vanguard,0,0,0,0,0,0,0
+Tons of Stats!,0,0,0,0,0,0,0
+Tons of Stats!,0,0,0,0,0,0,0
+Tons of Stats!,0,0,0,0,0,0,0
+Bulwark,0,0,0,0,0,0,0
+Swift Strike,0,0,0,0,0,0,0
+Unhindered,0,0,0,0,0,0,0
+Tons of Stats!,0,0,0,0,0,0,0
+Tons of Stats!,0,0,0,0,0,0,0
+Cybernetic Mass,0,0,0,0,0,0,0
+Tons of Stats!,0,0,0,0,0,0,0
+Tons of Stats!,0,0,0,0,0,0,0
+Splash Zone,0,0,0,0,0,0,0
+Extended Play,0,0,0,0,0,0,0
+Party Starters,0,0,0,0,0,0,0
+The Ol' Razzle Dazzle,0,0,0,0,0,0,0
+Mesmerizing Performance,0,0,0,0,0,0,0
+The Drop,0,0,0,0,0,0,0
+Live for Danger,0,0,0,0,0,0,0
+"That's Jazz, Baby!",0,0,0,0,0,0,0
+Give Me Your Energy!,0,0,0,0,0,0,0
+Bigger Shot,0,0,0,0,0,0,0
+Emotional Connection,0,0,0,0,0,0,0
+Insert Coin,0,0,0,0,0,0,0
+Encore!,0,0,0,0,0,0,0
+Expose Weakness,0,0,0,0,0,0,0
+Share the Spotlight,0,0,0,0,0,0,0
+Heartthrobs,0,0,0,0,0,0,0
+Do It for the Fans,0,0,0,0,0,0,0
+Heroic Presence,0,0,0,0,0,0,0
+Remember Your Roots,0,0,0,0,0,0,0
+Cold Steel,0,0,0,0,0,0,0
+Ramping Rhythm,0,0,0,0,0,0,0
+Sample Synthesis,0,0,0,0,0,0,0
+Raise the Tempo,0,0,0,0,0,0,0
+Bounty Hunters,0,0,0,0,0,0,0
+Hologram,0,0,0,0,0,0,0
+Blinged Out,0,0,0,0,0,0,0
+Talent Search,0,0,0,0,0,0,0
+Submit to the Pit,0,0,0,0,0,0,0
+Too Big to Fail,0,0,0,0,0,0,0
+Double the Funk,0,0,0,0,0,0,0
+Metalheads,0,0,0,0,0,0,0

@@ -28,12 +28,15 @@ class DatabaseAPI:
         list.make_champ_list()
 
         riot_api = RiotAPI()
+
+        #Type amount of recent games you want to extract from each player
         game_count = '5'
         match_ids = riot_api.get_match_by_puuid(game_count)
 
         all_game_results = []
         all_unit_results = []
 
+        #For each match, a new game result dataframe will be generated and combined with the pre-existing 'game_result' csv file
         for match_id in match_ids:
             game_result = riot_api.game_result_df(match_id)
             game_result_data = make_df(game_result, '5', data_dragon)
@@ -61,10 +64,14 @@ class DatabaseAPI:
         combined_unit_results.to_csv('unit_result.csv', sep=',', index=False, encoding='utf-8')
 
         preprocessed_data = basic_preprocessing(combined_game_results, combined_unit_results)
+
+        #Type the specific augment, champion, and item that you want the crosscheck
         augment = 'New Recruit'
         champion = 'Sylas'
         item = 'Redemption'
 
+
+        #Example usage of crosscheck
         augment_champion = pd.DataFrame(preprocessed_data.augment_champion_crosscheck(augment))
         augment_champion.to_csv('aug_cham.csv', sep=',', index=False, encoding='utf-8')
 

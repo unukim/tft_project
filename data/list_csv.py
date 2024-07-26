@@ -1,6 +1,9 @@
 import json
 import pandas as pd
 
+'''
+This class create the empty dataframe that will get updated by calling the functions of 'basic_processing' class
+'''
 
 # Load the JSON file
 with open("data/data_dragon.json", 'r') as file:
